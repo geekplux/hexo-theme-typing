@@ -1,0 +1,3 @@
+# Typing
+
+a hexo theme.
