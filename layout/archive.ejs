@@ -1,0 +1,76 @@
+
+<%
+var categoriesList = list_categories({ show_count: false }),
+  tagsList = list_tags({ show_count: false }),
+  archivesList = list_archives({ show_count: false });
+%>
+
+<% if (!is_year()) { %>
+  <div id="archive">
+
+    <h1>Archives</h1>
+
+    <% if (theme.atom) { %>
+      <p>
+        The feed is available via
+        <a href="<%=theme.atom%>">atom</a>.
+      </p>
+      <br>
+    <% } %>
+
+    <aside>
+      <h2>Categories</h2>
+      <% if (categoriesList) { %>
+        <%-categoriesList%>
+      <% } else { %>
+        <p>None.</p>
+      <% } %>
+    </aside>
+    <br>
+
+    <aside>
+      <h2>Tags</h2>
+      <% if (tagsList) { %>
+        <%-tagsList%>
+      <% } else { %>
+        <p>None.</p>
+      <% } %>
+    </aside>
+    <br>
+
+    <aside>
+      <h2>Archives</h2>
+      <% if (archivesList) { %>
+        <%-archivesList%>
+      <% } else { %>
+        <p>None.</p>
+      <% } %>
+    </aside>
+
+  </div>
+<% } else { %>
+
+  <h1><%=page.month + '/' + page.year%></h1>
+
+  <% page.posts.each(function(article) { %>
+    <div class="archive-item">
+      <% if (article.link) { %>
+        <!-- external link -->
+        <a href="<%=url_for(article.link)%>" target="_blank">
+          <%=article.title || 'No Title'%>
+        </a>
+      <% } else { %>
+        <!-- internal link -->
+        <a href="<%=url_for(article.path)%>">
+          <%=article.title || 'No Title'%>
+        </a>
+      <% } %>
+      <time datetime="<%=date_xml(article.date)%>">
+        <%=date(article.date)%>
+      </time>
+    </div>
+  <% }); %>
+
+<% } %>
+
+<%-partial('partials/pagination')%>
