@@ -1,21 +1,29 @@
-
-# html lang
+# Lang
 language: en
 
-# main menu navigation
+# Header
 menu:
   Home: /
   About: /about
   Contact: /contact
   Archives: /archives
+rss: /atom.xml
 
-# Miscelaneous
+# Content
+excerpt_link: Read More
+fancybox: true
+
+# Sidebar
+sidebar: bottom
+widgets:
+- category
+- tagcloud
+- recent_posts
+
+# Miscellaneous
+google_analytics:
 favicon: /favicon.ico
-
-# stylesheets loaded in the <head>
-stylesheets:
-- /css/typing.css
-
-# scripts loaded in the end of the body
-scripts:
-- /js/typing.js
+twitter:
+google_plus:
+fb_admins:
+fb_app_id:

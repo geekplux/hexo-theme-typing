@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <head>
   <meta charset="utf-8">
   <%
@@ -26,10 +28,8 @@
   <% if (theme.favicon){ %>
     <link rel="icon" href="<%- theme.favicon %>">
   <% } %>
-  <% if (theme.stylesheets !== undefined && theme.stylesheets.length > 0) { %>
-    <% theme.stylesheets.forEach(function(url) { %>
-      <%- css(url) %>
-    <% }); %>
-  <% } %>
+  <%- css('css/style') %>
   <!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  <%- partial('google-analytics') %>
+  <%- partial('baidu_tongji') %>
 </head>
