@@ -1,4 +1,3 @@
-
 <%
 var pageTitle = page.title || config.subtitle || '';
 if (is_archive()) pageTitle = 'Archives';
@@ -23,27 +22,8 @@ pageTitle += ' [ ' + config.title + ' ]';
 </head>
 <body>
 
-<div id="menu-outer">
-  <div id="menu-inner">
-    <% Object.keys(theme.menu).forEach(function(key) { %>
-      <a href="<%=theme.menu[key]%>"><%=key%></a>
-    <% }); %>
-  </div>
-</div>
-
-<div id="content-outer">
-  <div id="content-inner">
-    <%- body %>
-  </div>
-</div>
-
-<div id="bottom-outer">
-  <div id="bottom-inner">
-    Site by <%=config.author%> using
-    <a href="http://hexo.io">hexo blog framework</a>.
-    <br>
-    <a href="<%=config.root%>">Home</a>
-  </div>
+<div id="container" class="container">
+  <%- body %>
 </div>
 
 <% if (theme.scripts !== undefined && theme.scripts.length > 0) { %>
