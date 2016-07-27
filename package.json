@@ -1,0 +1,21 @@
+{
+  "name": "typing",
+  "description": "a hexo theme.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "hexo",
+    "theme"
+  ],
+  "author": "geekplux",
+  "license": "MIT",
+  "dependencies": {
+    "normalize.css": "^4.2.0"
+  },
+  "devDependencies": {
+    "cssnano-cli": "^1.0.4"
+  }
+}
