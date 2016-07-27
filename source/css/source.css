@@ -18,4 +18,9 @@ body {
   align-items: center;
   justify-content: center;
   max-width: 500px;
+  font-weight: lighter;
+
+  h1.nickname {
+    font-weight: lighter;
+  }
 }
