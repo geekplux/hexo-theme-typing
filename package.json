@@ -16,6 +16,8 @@
     "normalize.css": "^4.2.0"
   },
   "devDependencies": {
-    "cssnano-cli": "^1.0.4"
+    "cssnano": "^3.7.3",
+    "postcss-cli": "^2.5.2",
+    "postcss-import": "^8.1.2"
   }
 }
