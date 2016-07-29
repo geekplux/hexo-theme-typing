@@ -26,6 +26,8 @@ body {
   font-weight: lighter;
   color: #505050;
   line-height: 1.4;
+
+
   h1,
   strong {
     color: #222;
@@ -44,9 +46,14 @@ body {
     transition: color 100ms linear
   }
   hr {
-    color: #eee;
+    height: 1px;
+    border: 0;
     width: 80%;
     max-width: 300px;
+    background-image: -webkit-linear-gradient(0deg, transparent, #d5d5d5, transparent);
+  }
+  li {
+    list-style: none;
   }
   .profile {
     width: 80%;
@@ -58,11 +65,18 @@ body {
   }
   .links {
     padding: 0;
-    list-style: none;
     text-align: center;
     li {
       display: inline-block;
       margin: 0 5px;
+    }
+  }
+  .copyright {
+    margin-top: 60px;
+    font-size: 80%;
+    opacity: .6;
+    li {
+      display: inline-block;
     }
   }
 }
