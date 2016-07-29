@@ -1,19 +1,22 @@
 @import "normalize.css";
-
-html, body, .container {
+html,
+body,
+.container {
   width: 100%;
   height: 100%;
 }
 
 body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
-  -moz-font-feature-settings: "liga" on;
+  font-size: 20px;
 }
 
+.home {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: source sans pro, proxima nova, sans-serif;
+  -moz-font-feature-settings: "liga" on;
+  transition: all 250ms ease;
 
-.content {
   width: 100%;
   height: 100%;
   display: flex;
@@ -22,28 +25,41 @@ body {
   justify-content: center;
   font-weight: lighter;
   color: #505050;
-
-  h1, strong {
+  line-height: 1.4;
+  h1,
+  strong {
     color: #222;
   }
-
   a {
     color: #222;
+    /* font-weight: 200; */
     text-decoration: none;
     border-bottom: solid 1px #eee;
     transition: color 250ms linear;
     cursor: pointer;
   }
-
+  a:hover {
+    color: #22C5E5;
+    border-bottom: solid 1px RGBA(34, 197, 229, .2);
+    transition: color 100ms linear
+  }
   hr {
     color: #eee;
     width: 80%;
     max-width: 300px;
   }
-
+  .profile {
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    h1 {
+      font-weight: 300;
+    }
+  }
   .links {
     padding: 0;
     list-style: none;
+    text-align: center;
     li {
       display: inline-block;
       margin: 0 5px;
@@ -51,12 +67,30 @@ body {
   }
 }
 
-.profile {
-  width: 80%;
-  max-width: 500px;
-  text-align: center;
 
-  h1 {
-    font-weight: 300;
+/* tablet */
+
+@media (max-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+  .home {
+    line-height: 1.4;
+  }
+}
+
+
+/* mobile */
+
+@media (max-width: 468px) {
+  body {
+    font-size: 16px;
+  }
+  .home {
+    line-height: 1.4;
+    color: #222;
+    a {
+      color: #111;
+    }
   }
 }
