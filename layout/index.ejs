@@ -1,6 +1,14 @@
-<div class="profile">
-  <div class="content">
+<div class="content">
+  <div class="profile">
     <h1 class="nickname"><%= theme.nickname %></h1>
     <p><%- markdown(theme.description) %></p>
   </div>
+  <hr/>
+  <ul class="links">
+    <% for (var key in theme.links) { %>
+      <li>
+        <a href="<%= theme.links[key] %>"><%= key %></a>
+      </li>
+    <% } %>
+  </ul>
 </div>

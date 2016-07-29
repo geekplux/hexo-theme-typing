@@ -12,15 +12,51 @@ body {
   -moz-font-feature-settings: "liga" on;
 }
 
-.profile {
+
+.content {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 500px;
   font-weight: lighter;
+  color: #505050;
 
-  h1.nickname {
-    font-weight: lighter;
+  h1, strong {
+    color: #222;
+  }
+
+  a {
+    color: #222;
+    text-decoration: none;
+    border-bottom: solid 1px #eee;
+    transition: color 250ms linear;
+    cursor: pointer;
+  }
+
+  hr {
+    color: #eee;
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .links {
+    padding: 0;
+    list-style: none;
+    li {
+      display: inline-block;
+      margin: 0 5px;
+    }
+  }
+}
+
+.profile {
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+
+  h1 {
+    font-weight: 300;
   }
 }
