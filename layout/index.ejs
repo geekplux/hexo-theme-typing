@@ -1,20 +1,22 @@
 <div class="home">
-  <div class="profile">
-    <h1 class="nickname"><%= theme.nickname %></h1>
-    <div class="description">
-      <p><%- markdown(theme.description) %></p>
+  <div class="content">
+    <div class="profile">
+      <h1 class="nickname"><%= theme.nickname %></h1>
+      <div class="description">
+        <p><%- markdown(theme.description) %></p>
+      </div>
     </div>
+    <hr/>
+    <ul class="links">
+      <% for (var key in theme.links) { %>
+        <li>
+          <a href="<%= theme.links[key] %>"><%= key %></a>
+        </li>
+      <% } %>
+    </ul>
+    <footer class="copyright">
+      <li>Powered by <a href="https://hexo.io">Hexo</a></li>
+      <li>Theme &copy; <a href="">GeekPlux</a></li>
+    </footer>
   </div>
-  <hr/>
-  <ul class="links">
-    <% for (var key in theme.links) { %>
-      <li>
-        <a href="<%= theme.links[key] %>"><%= key %></a>
-      </li>
-    <% } %>
-  </ul>
-  <footer class="copyright">
-    <li>Powered by <a href="https://hexo.io">Hexo</a></li>
-    <li>Theme &copy; <a href="">GeekPlux</a></li>
-  </footer>
 </div>

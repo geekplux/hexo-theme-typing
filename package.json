@@ -13,7 +13,8 @@
   "author": "geekplux",
   "license": "MIT",
   "dependencies": {
-    "normalize.css": "^4.2.0"
+    "normalize.css": "^4.2.0",
+    "typo.css": "^2.1.2"
   },
   "devDependencies": {
     "cssnano": "^3.7.3",

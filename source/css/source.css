@@ -1,4 +1,6 @@
+@import "typo.css";
 @import "normalize.css";
+
 html,
 body,
 .container {
@@ -6,14 +8,23 @@ body,
   height: 100%;
 }
 
-body {
-  font-size: 20px;
+body, h1, h2, h3, h4, h5, h6 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: source sans pro, proxima nova, sans-serif;
   -moz-font-feature-settings: "liga" on;
   transition: all 250ms ease;
 }
+
+body {
+  font-size: 20px;
+}
+
+em {
+  font-style: italic;
+  font-weight: lighter;
+}
+
 
 .container {
   a {
@@ -31,19 +42,26 @@ body {
   }
 }
 
-.home, .archive-container {
+
+.home {
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-weight: lighter;
   color: #505050;
   line-height: 1.4;
-}
+  text-align: center;
+  position: relative;
 
-.home {
+  .content {
+    width: 60%;
+    max-width: 500px;
+    max-height: 80%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+  }
+
   h1,
   strong {
     color: #222;
@@ -54,6 +72,7 @@ body {
     border: 0;
     width: 80%;
     max-width: 300px;
+    margin: 20px auto;
     background-image: -webkit-linear-gradient(0deg, transparent, #d5d5d5, transparent);
   }
 
@@ -62,9 +81,8 @@ body {
   }
 
   .profile {
-    width: 80%;
-    max-width: 500px;
-    text-align: center;
+    width: 100%;
+
     h1 {
       font-weight: 300;
     }
@@ -80,7 +98,9 @@ body {
   }
 
   .copyright {
-    margin-top: 60px;
+    text-align: center;
+    width: 100%;
+    margin: 60px 0;
     font-size: 80%;
     opacity: .6;
     li {
@@ -91,12 +111,11 @@ body {
 
 
 .archive-container {
+  width: 60%;
+  max-width: 500px;
+  margin: 0 auto;
   line-height: 1;
-
-  .archive-block {
-    text-align: left;
-    position: relative;
-  }
+  text-align: left;
 
   article {
     margin-bottom: 15px;
@@ -128,10 +147,6 @@ body {
     background-image: -webkit-linear-gradient(0deg, #d5d5d5, #d5d5d5, transparent);
   }
 
-  .archives-wrap {
-    max-width: 500px;
-  }
-
   .archive-article-date {
     font-size: 80%;
     margin-right: 20px;
@@ -147,7 +162,7 @@ body {
 
   .page-nav {
     hr {
-      margin: 20px 0;
+      margin: 20px 0 100px 0;
     }
   }
 
@@ -174,7 +189,7 @@ body {
 
 @media (max-width: 468px) {
   body {
-    font-size: 16px;
+    font-size: 12px;
   }
   .home {
     line-height: 1.4;
