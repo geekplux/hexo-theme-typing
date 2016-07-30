@@ -55,6 +55,10 @@ em {
     border: 0;
     background-image: -webkit-linear-gradient(0deg, transparent, #d5d5d5, transparent);
   }
+  color: ##cacdd0;
+  a, b, strong {
+    color: #aeb4b9;
+  }
 }
 
 .container {
@@ -161,13 +165,20 @@ em {
     font-size: 18px;
     .main-nav-link {
       margin-right: 10px;
-      color: #cacdd0;
+      color: #777;
     }
   }
 
   .archive-article-header {
     > a, > h1 {
-      display: inline;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    > a {
+      width: 20%;
+    }
+    > h1 {
+      width: 79%;
     }
 
     h1 {
@@ -188,7 +199,6 @@ em {
 
   .archive-article-date {
     font-size: 80%;
-    margin-right: 20px;
     color: #aaa;
   }
   .archive-article-title {
@@ -200,12 +210,19 @@ em {
   }
 
   .page-nav {
+    text-align: center;
+    margin-top: 30px;
+    color: #aeb4b9;
+    a {
+      color: #777;
+    }
     hr {
       margin: 20px 0 30px 0;
     }
   }
 
-  .page-number {
+  .page-number,
+  .extend {
     margin-right: 15px;
   }
 }
