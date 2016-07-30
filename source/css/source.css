@@ -113,9 +113,14 @@ em {
 .archive-container {
   width: 60%;
   max-width: 500px;
+  max-height: 80%;
   margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
   line-height: 1;
   text-align: left;
+  font-size: 16px;
 
   article {
     margin-bottom: 15px;
@@ -162,7 +167,7 @@ em {
 
   .page-nav {
     hr {
-      margin: 20px 0 100px 0;
+      margin: 20px 0 30px 0;
     }
   }
 
@@ -182,6 +187,9 @@ em {
   .home {
     line-height: 1.4;
   }
+  .home .content, .archive-container {
+    max-height: 60%;
+  }
 }
 
 
@@ -197,5 +205,8 @@ em {
     a {
       color: #111;
     }
+  }
+  .home .content, .archive-container {
+    max-height: 60%;
   }
 }
