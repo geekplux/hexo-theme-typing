@@ -12,10 +12,6 @@
       <% } %>
       <% last = year; %>
       <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="<%- url_for(config.archive_dir + '/' + year) %>" class="archive-year"><%= year %></a>
-        </div>
-        <hr/>
         <div class="archives">
     <% } %>
     <%- partial('archive-post', {post: post, even: i % 2 == 0}) %>
@@ -26,7 +22,6 @@
 <% } %>
 <% if (page.total > 1){ %>
   <nav id="page-nav" class="page-nav">
-    <hr/>
     <% var prev_text = "&laquo; " + __('prev');var next_text = __('next') + " &raquo;"%>
     <%- paginator({
       prev_text: prev_text,
