@@ -1,10 +1,20 @@
 # Typing
 
-a hexo theme.
+a pure and fresh Hexo theme. (WIP)
+
+
+## Preview
+
+[Demo](demo)
+
+![](preview/home_page.png)
+![](preview/archive_page.png)
 
 ## Installation
 
 ### Install
+
+    WIP
 
 **Typing requires Hexo 2.4 and above.**
 
@@ -46,20 +56,14 @@ google_plus:
 - **twitter** - Twiiter ID
 - **google_plus** - Google+ ID
 
-## Features
-
-### Fancybox
-
-Typing uses [Fancybox] to showcase your photos. You can use Markdown syntax or fancybox tag plugin to add your photos.
-
-```
-![img caption](img url)
-
-{% fancybox img_url [img_thumbnail] [img_caption] %}
-```
 
 ## Development
 
+```shell
+fork & clone
+npm install
+makefile
+```
 
 ### LICENSE
 
