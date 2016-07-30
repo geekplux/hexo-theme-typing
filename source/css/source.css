@@ -2,10 +2,11 @@
 @import "normalize.css";
 
 html,
-body,
-.container {
+body {
   width: 100%;
   height: 100%;
+  position: relative;
+  box-sizing: border-box;
 }
 
 body, h1, h2, h3, h4, h5, h6 {
@@ -20,45 +21,65 @@ body {
   font-size: 20px;
 }
 
+a {
+  color: #222;
+  /* font-weight: 200; */
+  text-decoration: none;
+  border-bottom: solid 1px #eee;
+  transition: color 250ms linear;
+  cursor: pointer;
+}
+a:hover {
+  text-decoration: none;
+  color: #22C5E5;
+  border-bottom: solid 1px RGBA(34, 197, 229, .2);
+  transition: color 100ms linear
+}
+
 em {
   font-style: italic;
   font-weight: lighter;
 }
 
+footer {
+  margin-top: 50px;
+}
 
 .container {
+  width: 100%;
+}
+
+.copyright {
+  text-align: center;
+  width: 100%;
+  font-size: 80%;
+  color: #cacdd0;
+  /* opacity: .6; */
+  li {
+    display: inline-block;
+  }
+
   a {
-    color: #222;
-    /* font-weight: 200; */
-    text-decoration: none;
-    border-bottom: solid 1px #eee;
-    transition: color 250ms linear;
-    cursor: pointer;
+    color: #aeb4b9;
   }
   a:hover {
     color: #22C5E5;
-    border-bottom: solid 1px RGBA(34, 197, 229, .2);
-    transition: color 100ms linear
   }
 }
 
 
 .home {
-  width: 100%;
-  height: 100%;
   font-weight: lighter;
   color: #505050;
   line-height: 1.4;
   text-align: center;
   position: relative;
+  padding-top: 10%;
 
   .content {
     width: 60%;
     max-width: 500px;
-    max-height: 80%;
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
     margin: 0 auto;
   }
 
@@ -96,28 +117,14 @@ em {
       margin: 0 5px;
     }
   }
-
-  .copyright {
-    text-align: center;
-    width: 100%;
-    margin: 60px 0;
-    font-size: 80%;
-    opacity: .6;
-    li {
-      display: inline-block;
-    }
-  }
 }
 
 
 .archive-container {
   width: 60%;
   max-width: 500px;
-  max-height: 80%;
   margin: 0 auto;
   position: relative;
-  top: 50%;
-  transform: translateY(-50%);
   line-height: 1;
   text-align: left;
   font-size: 16px;
@@ -185,10 +192,7 @@ em {
     font-size: 18px;
   }
   .home {
-    line-height: 1.4;
-  }
-  .home .content, .archive-container {
-    max-height: 60%;
+    padding-top: 20%;
   }
 }
 
@@ -197,16 +201,19 @@ em {
 
 @media (max-width: 468px) {
   body {
-    font-size: 12px;
+    font-size: 16px;
   }
+
   .home {
-    line-height: 1.4;
     color: #222;
     a {
       color: #111;
     }
   }
-  .home .content, .archive-container {
-    max-height: 60%;
+}
+
+@media (max-width: 320px) {
+  body {
+    font-size: 12px;
   }
 }
