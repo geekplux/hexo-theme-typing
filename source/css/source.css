@@ -91,11 +91,24 @@ body {
 
 
 .archive-container {
-  text-align: left;
+  line-height: 1;
+
+  .archive-block {
+    text-align: left;
+    position: relative;
+  }
+
+  article {
+    margin-bottom: 15px;
+  }
 
   a {
     border: 0;
   }
+  a:hover {
+    border: 0;
+  }
+
   .archive-article-header {
     > a, > h1 {
       display: inline;
@@ -107,15 +120,30 @@ body {
     }
   }
 
+  hr {
+    height: 1px;
+    border: 0;
+    width: 80%;
+    max-width: 100px;
+    background-image: -webkit-linear-gradient(0deg, transparent, #d5d5d5, transparent);
+
+  }
+
   .archives-wrap {
     max-width: 500px;
+    margin-bottom: 50px;
   }
 
   .archive-article-date {
     font-size: 80%;
+    margin-right: 20px;
   }
   .archive-article-title {
-    font-weight: 300;
+    font-weight: 400;
+  }
+
+  .archive-year-wrap {
+    margin-bottom: 30px;
   }
 }
 
