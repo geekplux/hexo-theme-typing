@@ -123,27 +123,36 @@ body {
   hr {
     height: 1px;
     border: 0;
-    width: 80%;
-    max-width: 100px;
-    background-image: -webkit-linear-gradient(0deg, transparent, #d5d5d5, transparent);
-
+    width: 100%;
+    /* max-width: 100px; */
+    background-image: -webkit-linear-gradient(0deg, #d5d5d5, #d5d5d5, transparent);
   }
 
   .archives-wrap {
     max-width: 500px;
-    margin-bottom: 50px;
   }
 
   .archive-article-date {
     font-size: 80%;
     margin-right: 20px;
+    color: #aaa;
   }
   .archive-article-title {
-    font-weight: 400;
+    font-weight: 200;
   }
 
   .archive-year-wrap {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+  }
+
+  .page-nav {
+    hr {
+      margin: 20px 0;
+    }
+  }
+
+  .page-number {
+    margin-right: 15px;
   }
 }
 
