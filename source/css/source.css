@@ -45,9 +45,7 @@ em {
   padding: 50px 0;
 }
 
-.archive-footer {
-  max-width: 500px;
-  width: 100%;
+.archive-footer, .post-footer {
   padding: 50px;
   margin: 0 auto;
   hr {
@@ -59,7 +57,18 @@ em {
   a, b, strong {
     color: #aeb4b9;
   }
+
 }
+
+.archive-footer {
+  max-width: 500px;
+  width: 100%;
+}
+
+.post-footer {
+  width: 60%;
+}
+
 
 .container {
   width: 100%;
@@ -224,6 +233,24 @@ em {
   .page-number,
   .extend {
     margin-right: 15px;
+  }
+}
+
+
+.article {
+  width: 60%;
+  margin: 100px auto;
+  /* font-size: 16px; */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bolder;
+  }
+
+  .article-title {
+    font-size: 2.5em;
+  }
+
+  .article-nav-link-wrap {
+    display: inline-block;
   }
 }
 
