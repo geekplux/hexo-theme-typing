@@ -252,6 +252,18 @@ em {
   .article-nav-link-wrap {
     display: inline-block;
   }
+
+  a.fancybox,
+  a.fancybox-item {
+    border: 0;
+  }
+
+  .caption {
+    color: #aeb4b9;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+  }
 }
 
 
