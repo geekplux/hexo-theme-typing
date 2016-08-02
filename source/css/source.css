@@ -265,6 +265,13 @@ em {
     font-size: 14px;
     text-align: center;
   }
+
+  .article-entry {
+    img {
+      display: block;
+      margin: auto;
+    }
+  }
 }
 
 
