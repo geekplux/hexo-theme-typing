@@ -11,12 +11,16 @@
         <% } %>
       </div>
     </a>
+  <% } else { %>
+    <span id="article-nav-newer" class="article-nav-link-wrap newer"></span>
   <% } %>
   <% if (post.next){ %>
     <a href="<%- url_for(post.next.path) %>" id="article-nav-older" class="article-nav-link-wrap older">
       <strong class="article-nav-caption"><%= __('older') %></strong>
       <div class="article-nav-title"><%= post.next.title %></div>
     </a>
+  <% } else { %>
+    <span id="article-nav-older" class="article-nav-link-wrap older"></span>
   <% } %>
 </nav>
 <% } %>
