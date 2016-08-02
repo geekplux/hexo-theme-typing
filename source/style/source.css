@@ -448,6 +448,7 @@ em {
 /* code highlight */
 $code-background: #f3f5f6;
 $code-font-size: 14px;
+$code-line-height: 1.8;
 
 
 $highlight-background: #ffffff;
@@ -471,6 +472,7 @@ $highlight-purple: #8959a8;
   color: $highlight-foreground;
   font-size: $code-font-size;
   overflow: auto;
+  line-height: $code-line-height;
 }
 
 @define-extend line-numbers {
@@ -481,11 +483,6 @@ $highlight-purple: #8959a8;
 .article-entry {
   figure.highlight {
     margin: 0;
-  }
-  code {
-    background: $code-background;
-    text-shadow: 0 1px #fff;
-    padding: 0 0.3em;
   }
   pre {
     @extend code-block;
@@ -511,10 +508,7 @@ $highlight-purple: #8959a8;
       padding: 0;
     }
     figcaption {
-      /* font-size: 0.85em; */
       color: $highlight-comment;
-      /* line-height: 1em; */
-      /* margin-bottom: 1em; */
       a {
         float: right;
       }
@@ -524,6 +518,9 @@ $highlight-purple: #8959a8;
       text-align: right;
       padding-right: 20px;
       width: 0;
+    }
+    .line {
+      height: 25px;
     }
     .line.marked {
       background: $highlight-selection;

@@ -5,8 +5,8 @@ a pure and fresh Hexo theme.
 
 ## Preview
 
-[Demo](http://geekplux.com/hexo-theme-typing)
-[My blog](http://geekplux.com)
+- [Demo](http://geekplux.com/hexo-theme-typing)
+- [My blog](http://geekplux.com)
 
 ![](preview/home_page.png)
 ![](preview/archive_page.png)
@@ -75,7 +75,6 @@ post_footer_content: ipsum dolor sit amet, **consectetur adipiscing elit.** Fusc
 - **links** - Some links you want to show
 - **archive_footer_content**: - Content in your archives page footer
 - **post_footer_content**: - Content in your posts and pages footer
-
 - **fancybox** - Enable [Fancybox]
 - **google_analytics** - Google Analytics ID
 - **favicon** - Favicon path
