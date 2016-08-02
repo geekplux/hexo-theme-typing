@@ -46,8 +46,8 @@ em {
 }
 
 .archive-footer, .post-footer {
-  padding: 50px;
   margin: 0 auto;
+  padding: 50px;
   hr {
     height: 1px;
     border: 0;
@@ -239,7 +239,8 @@ em {
 
 .article {
   width: 60%;
-  margin: 100px auto;
+  margin: 0 auto;
+  padding-top: 100px;
   /* font-size: 16px; */
   h1, h2, h3, h4, h5, h6 {
     font-weight: bolder;
@@ -263,6 +264,14 @@ em {
     display: block;
     font-size: 14px;
     text-align: center;
+  }
+}
+
+
+.article-type-page {
+  .article-meta,
+  .article-footer {
+    display: none;
   }
 }
 
