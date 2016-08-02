@@ -1,5 +1,5 @@
-@import "typo.css";
-@import "normalize.css";
+@import 'typo.css';
+@import 'normalize.css';
 
 
 $black-normal: #505050;
@@ -9,6 +9,7 @@ $grey: #aeb4b9;
 $grey-bold: #777;
 $grey-light: #cacdd0;
 $scooter: #22C5E5;
+$code-background: #f3f5f6;
 
 html,
 body {
@@ -216,6 +217,7 @@ em {
     /* max-width: 100px; */
     margin: 20px 0 40px 0;
     @extend hr-base;
+    background-image: -webkit-linear-gradient(0deg, #d5d5d5, #d5d5d5, transparent);
   }
 
 
@@ -276,6 +278,46 @@ em {
     img {
       display: block;
       margin: auto;
+    }
+
+    blockquote {
+      footer {
+        text-align: center;
+        font-size: 80%;
+        color: $grey;
+        cite {
+          font-style: italic;
+          &:before {
+            content: "—";
+            padding: 0px 0.5em;
+          }
+          a {
+            color: $grey;
+            border-bottom: 1px solid #eee;
+            transition: color 250ms linear;
+            &:hover {
+              @extend a-hover;
+            }
+          }
+        }
+        strong {
+          color: $grey-bold;
+          font-weight: 400;
+        }
+      }
+    }
+
+    .pullquote {
+      width: 45%;
+      border: 0;
+    }
+    .pullquote.left {
+      float: left;
+      text-align: left;
+    }
+    .pullquote.right {
+      float: right;
+      text-align: right;
     }
   }
 

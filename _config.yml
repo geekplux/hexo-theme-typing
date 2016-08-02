@@ -4,9 +4,8 @@ language: en
 # Header
 menu:
   Home: /
-  About: /about
-  Contact: /contact
   Archives: /archives
+  About: /about
 rss: /atom.xml
 
 # Content
