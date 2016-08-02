@@ -1,20 +1,26 @@
 # Typing
 
-a pure and fresh Hexo theme. (WIP)
+a pure and fresh Hexo theme.
 
 
 ## Preview
 
-[Demo](demo)
+[Demo](http://geekplux.com/hexo-theme-typing)
+[My blog](http://geekplux.com)
 
 ![](preview/home_page.png)
 ![](preview/archive_page.png)
+
+other preview images in `preview` folder.
 
 ## Installation
 
 ### Install
 
-    WIP
+```shell
+cd you-blog
+git clone https://github.com/geekplux/hexo-theme-typing themes/typing
+```
 
 **Typing requires Hexo 2.4 and above.**
 
@@ -46,10 +52,30 @@ google_analytics:
 favicon: /favicon.png
 twitter:
 google_plus:
+fb_admins:
+fb_app_id:
+
+# Profile
+nickname: NickName
+description: Lorem ipsum dolor sit amet, **consectetur adipiscing elit.** Fusce eget urna vitae velit *eleifend interdum at ac* nisi.
+links:
+  Blog: /archives
+  GitHub: https://github.com/
+  ...
+
+# Info
+archive_footer_content: Lorem ipsum dolor sit amet, **consectetur adipiscing elit.** Fusce eget urna vitae velit *eleifend interdum at ac* nisi.
+post_footer_content: ipsum dolor sit amet, **consectetur adipiscing elit.** Fusce eget urna vitae velit *eleifend interdum at ac* nisi.
 ```
 
 - **menu** - Navigation menu
 - **rss** - RSS link
+- **nickname** - Your nickname
+- **description** - Description below the name
+- **links** - Some links you want to show
+- **archive_footer_content**: - Content in your archives page footer
+- **post_footer_content**: - Content in your posts and pages footer
+
 - **fancybox** - Enable [Fancybox]
 - **google_analytics** - Google Analytics ID
 - **favicon** - Favicon path
@@ -59,10 +85,12 @@ google_plus:
 
 ## Development
 
+Anyone is welcome to contribute!
+
 ```shell
 fork & clone
 npm install
-makefile
+make all
 ```
 
 ### LICENSE

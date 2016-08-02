@@ -1,2 +1,4 @@
 node_modules
 *.sh
+
+npm-debug.log
