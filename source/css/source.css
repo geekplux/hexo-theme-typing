@@ -306,11 +306,39 @@ em {
   .article-nav-link-wrap.older {
     text-align: left;
   }
+
+  .article-footer {
+    margin-top: 50px;
+    hr {
+      margin-top: 50px;
+      @extend hr-base;
+    }
+  }
+
+  .article-meta {
+    font-size: 80%;
+    color: $grey;
+    a {
+      color: $grey-bold;
+    }
+    .label {
+      margin-right: 10px;
+    }
+    .article-tag-list, .article-category {
+      display: inline-block;
+    }
+    .article-tag-list-item {
+      display: inline-block;
+      margin-right: 5px;
+      &:before {
+        content: '#';
+      }
+    }
+  }
 }
 
 
 .article-type-page {
-  .article-meta,
   .article-footer {
     display: none;
   }
