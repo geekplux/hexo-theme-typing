@@ -394,6 +394,12 @@ em {
       }
     }
   }
+
+  .article-gallery {
+    img {
+      width: 100%;
+    }
+  }
 }
 
 
@@ -498,7 +504,7 @@ $highlight-purple: #8959a8;
     }
     table {
       margin: 0;
-      width: auto;
+      width: 100%;
     }
     td {
       border: 0;
@@ -517,6 +523,7 @@ $highlight-purple: #8959a8;
       @extend line-numbers;
       text-align: right;
       padding-right: 20px;
+      width: 0;
     }
     .line.marked {
       background: $highlight-selection;
