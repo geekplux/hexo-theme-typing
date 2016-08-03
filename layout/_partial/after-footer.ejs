@@ -1,4 +1,4 @@
-<% if (config.disqus_shortname){ %>
+<% if (config.disqus_shortname && !is_home() && !is_archive()) { %>
   <script>
    var disqus_shortname = '<%= config.disqus_shortname %>';
    <% if (page.permalink){ %>
