@@ -71,8 +71,8 @@ post_footer_content: ipsum dolor sit amet, **consectetur adipiscing elit.** Fusc
 - **nickname** - Your nickname
 - **description** - Description below the name
 - **links** - Some links you want to show
-- **archive_footer_content**: - Content in your archives page footer
-- **post_footer_content**: - Content in your posts and pages footer
+- **archive_footer_content**: - Content in your archives page footer(Markdown supported)
+- **post_footer_content**: - Content in your posts and pages footer(Markdown supported)
 - **fancybox** - Enable [Fancybox]
 - **google_analytics** - Google Analytics ID
 - **favicon** - Favicon path
