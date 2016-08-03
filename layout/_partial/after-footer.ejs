@@ -1,17 +1,17 @@
 <% if (config.disqus_shortname){ %>
-<script>
-  var disqus_shortname = '<%= config.disqus_shortname %>';
-  <% if (page.permalink){ %>
-  var disqus_url = '<%= page.permalink %>';
-  <% } %>
-  (function(){
-    var dsq = document.createElement('script');
-    dsq.type = 'text/javascript';
-    dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/<% if (page.comments) { %>embed.js<% } else { %>count.js<% } %>';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-  })();
-</script>
+  <script>
+   var disqus_shortname = '<%= config.disqus_shortname %>';
+   <% if (page.permalink){ %>
+   var disqus_url = '<%= page.permalink %>';
+   <% } %>
+   (function(){
+     var dsq = document.createElement('script');
+     dsq.type = 'text/javascript';
+     dsq.async = true;
+     dsq.src = '//' + disqus_shortname + '.disqus.com/<% if (page.comments) { %>embed.js<% } else { %>count.js<% } %>';
+     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+   })();
+  </script>
 <% } %>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
@@ -22,5 +22,7 @@
 <% } %>
 
 <%- js('js/typing') %>
+<!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+<%- partial('baidu_tongji') %>
 <%- partial('google-analytics') %>
 <%- partial('gauges-analytics') %>

@@ -52,8 +52,6 @@ google_analytics:
 favicon: /favicon.png
 twitter:
 google_plus:
-fb_admins:
-fb_app_id:
 
 # Profile
 nickname: NickName
