@@ -5,11 +5,9 @@ a pure and fresh Hexo theme.
 
 ## Preview
 
-- [Demo](http://geekplux.com/hexo-theme-typing)
 - [My blog](http://geekplux.com)
 
-![](preview/home_page.png)
-![](preview/archive_page.png)
+![](preview/preview.png)
 
 other preview images in `preview` folder.
 
