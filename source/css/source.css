@@ -10,6 +10,8 @@ $grey-bold: #777;
 $grey-light: #cacdd0;
 $scooter: #22C5E5;
 
+$content-width: 60%;
+
 
 html,
 body {
@@ -70,7 +72,7 @@ em {
 }
 
 .archive-footer, .post-footer {
-  width: 60%;
+  width: $content-width;
   margin: 0 auto;
   padding: 50px 0;
   hr {
@@ -119,7 +121,7 @@ em {
   padding-top: 10%;
 
   .content {
-    width: 60%;
+    width: $content-width;
     max-width: 500px;
     position: relative;
     margin: 0 auto;
@@ -161,7 +163,7 @@ em {
 
 
 .archive-container {
-  width: 60%;
+  width: $content-width;
   margin: 0 auto;
   position: relative;
   line-height: 1;
@@ -244,7 +246,7 @@ em {
 
 
 .article {
-  width: 60%;
+  width: $content-width;
   margin: 0 auto;
   padding-top: 100px;
   /* font-size: 16px; */
@@ -405,7 +407,7 @@ em {
 }
 
 .comments {
-  width: 60%;
+  width: $content-width;
   margin: 50px auto 0 auto;
 }
 
@@ -610,5 +612,9 @@ pre {
     .archive-footer, .post-footer {
       padding: 30px;
     }
+  }
+
+  .footer {
+    font-size: 100%;
   }
 }
