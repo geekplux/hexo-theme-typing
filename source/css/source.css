@@ -192,6 +192,7 @@ em {
     .main-nav-link {
       margin-right: 10px;
       color: $grey-bold;
+      padding-bottom: 5px;
     }
   }
 
@@ -571,9 +572,6 @@ pre {
   body {
     font-size: 18px;
   }
-  .home {
-    padding-top: 20%;
-  }
 }
 
 
@@ -605,8 +603,10 @@ pre {
 }
 
 @media (max-width: 320px) {
+  $mobile-content-width: 80%;
+
   body {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .article {
@@ -619,7 +619,28 @@ pre {
     }
   }
 
-  .footer {
+  .footer,
+  .footer-content {
     font-size: 100%;
+  }
+
+  .archive-footer, .post-footer {
+    width: $mobile-content-width;
+  }
+
+  .home {
+    .content {
+      width: $mobile-content-width;
+    }
+
+  }
+  .archive-container {
+    width: $mobile-content-width;
+  }
+  .article {
+    width: $mobile-content-width;
+  }
+  .comments {
+    width: $mobile-content-width;
   }
 }
