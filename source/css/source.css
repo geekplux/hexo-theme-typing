@@ -13,6 +13,19 @@ $scooter: #22C5E5;
 $content-width: 60%;
 
 
+@define-extend a-hover {
+  color: $scooter;
+  border-bottom: solid 1px RGBA(34, 197, 229, .2);
+  transition: color 100ms linear
+}
+
+@define-extend hr-base {
+  height: 1px;
+  border: 0;
+  background-image: -webkit-linear-gradient(0deg, transparent, #d5d5d5, transparent);
+}
+
+
 html,
 body {
   width: 100%;
@@ -33,11 +46,6 @@ body {
   font-size: 20px;
 }
 
-@define-extend a-hover {
-  color: $scooter;
-  border-bottom: solid 1px RGBA(34, 197, 229, .2);
-  transition: color 100ms linear
-}
 
 a {
   color: $black-light;
@@ -55,12 +63,6 @@ a:hover {
 em {
   font-style: italic;
   font-weight: lighter;
-}
-
-@define-extend hr-base {
-  height: 1px;
-  border: 0;
-  background-image: -webkit-linear-gradient(0deg, transparent, #d5d5d5, transparent);
 }
 
 .footer {
@@ -215,8 +217,7 @@ em {
   }
 
   hr {
-    width: 50%;
-    /* max-width: 100px; */
+    width: 60%;
     margin: 20px 0 40px 0;
     @extend hr-base;
     background-image: -webkit-linear-gradient(0deg, #d5d5d5, #d5d5d5, transparent);
@@ -254,8 +255,26 @@ em {
 .article {
   width: $content-width;
   margin: 0 auto;
-  padding-top: 100px;
   /* font-size: 16px; */
+
+  .header {
+    font-size: 18px;
+    padding-top: 50px;
+    .main-nav-link {
+      margin-right: 10px;
+      color: $grey-bold;
+      padding-bottom: 5px;
+      border: 0;
+    }
+  }
+
+  hr {
+    width: 60%;
+    margin: 20px 0 40px 0;
+    @extend hr-base;
+    background-image: -webkit-linear-gradient(0deg, #d5d5d5, #d5d5d5, transparent);
+  }
+
   h1, h2, h3, h4, h5, h6 {
     font-weight: bolder;
   }
