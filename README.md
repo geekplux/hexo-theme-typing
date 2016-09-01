@@ -16,7 +16,7 @@ other preview images in `preview` folder.
 ### Install
 
 ```shell
-cd you-blog
+cd your-blog
 git clone https://github.com/geekplux/hexo-theme-typing themes/typing
 ```
 
@@ -83,9 +83,12 @@ post_footer_content: ipsum dolor sit amet, **consectetur adipiscing elit.** Fusc
 Anyone is welcome to contribute!
 
 ```shell
-fork & clone
-npm install
-make all
+mkdir typing_dev
+cd typing_dev
+git clone https://github.com/hexojs/hexo-theme-unit-test.git
+fork & clone https://github.com/geekplux/hexo-theme-typing.git
+cd hexo-theme-unit-test & npm install
+cd hexo-theme-typing & npm install & make all
 ```
 
 ### LICENSE

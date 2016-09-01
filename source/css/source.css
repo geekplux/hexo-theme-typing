@@ -112,13 +112,18 @@ em {
 }
 
 
+.home-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .home {
   font-weight: lighter;
-  color: $black-base;
+  color: $black-normal;
   line-height: 1.4;
   text-align: center;
   position: relative;
-  padding-top: 10%;
 
   .content {
     width: $content-width;
