@@ -25,6 +25,12 @@ $content-width: 60%;
   background-image: -webkit-linear-gradient(0deg, transparent, #d5d5d5, transparent);
 }
 
+@define-extend nav-link-base {
+  margin-right: 10px;
+  color: $grey-bold;
+  padding-bottom: 5px;
+  display: inline-block;
+}
 
 html,
 body {
@@ -192,9 +198,7 @@ em {
   .header {
     font-size: 18px;
     .main-nav-link {
-      margin-right: 10px;
-      color: $grey-bold;
-      padding-bottom: 5px;
+      @extend nav-link-base;
     }
   }
 
@@ -204,10 +208,7 @@ em {
       vertical-align: middle;
     }
     > a {
-      width: 20%;
-    }
-    > h1 {
-      width: 79%;
+      width: 100px;
     }
 
     h1 {
@@ -261,9 +262,7 @@ em {
     font-size: 18px;
     padding-top: 50px;
     .main-nav-link {
-      margin-right: 10px;
-      color: $grey-bold;
-      padding-bottom: 5px;
+      @extend nav-link-base;
       border: 0;
     }
   }
