@@ -32,6 +32,7 @@ $content-width: 60%;
   display: inline-block;
 }
 
+
 html,
 body {
   width: 100%;
@@ -175,7 +176,9 @@ em {
 }
 
 
-.archive-container {
+.archive-container,
+.category-container,
+.tag-container {
   width: $content-width;
   margin: 0 auto;
   position: relative;
