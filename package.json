@@ -8,9 +8,14 @@
   },
   "keywords": [
     "hexo",
-    "theme"
+    "theme",
+    "typing"
   ],
-  "author": "geekplux",
+  "author": {
+    "name": "geekplux",
+    "email": "geekplux@gmail.com",
+    "url": "github.com/geekplux"
+  },
   "license": "MIT",
   "dependencies": {
     "normalize.css": "^4.2.0",
