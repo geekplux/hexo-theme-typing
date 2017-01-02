@@ -6,6 +6,7 @@ a pure and fresh Hexo theme.
 ## Preview
 
 - [My blog](http://geekplux.com)
+- [Online Demo](http://geekplux.github.io/hexo-theme-typing/)
 
 ![](preview/preview.png)
 
