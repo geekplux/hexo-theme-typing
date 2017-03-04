@@ -1,6 +1,9 @@
 # Lang
 language: en
 
+# Dark Mode
+dark: true
+
 # Header
 menu:
   Home: /
