@@ -9,7 +9,6 @@ $grey: #aeb4b9;
 $grey-bold: #777;
 $grey-light: #cacdd0;
 $scooter: #22C5E5;
-
 $content-width: 60%;
 
 
@@ -129,8 +128,8 @@ em {
 
 .home {
   font-weight: lighter;
-  color: $black-normal;
   line-height: 1.4;
+  color: $black-normal;
   text-align: center;
   position: relative;
 
@@ -588,12 +587,33 @@ pre {
 
 /************  dark mode  ***********/
 $dark-bg: #3f3f3f;
-$dark-color: #c8c8c8;
+$dark-color: #d8d8d8;
+$dark-white: #ddd;
+$dark-white-light: #fff;
 
 .dark {
   background-color: $dark-bg;
   color: $dark-color;
+
+  a {
+    color: $dark-white;
+    border-bottom: solid 1px #ddd;
+  }
+  a:hover {
+    @extend a-hover;
+    color: $dark-white-light;
+    border-bottom: solid 1px $dark-white-light;
+  }
+
+  .home {
+    color: $dark-color;
+    h1,
+    strong {
+      color: $dark-white;
+    }
+  }
 }
+
 
 /************  dark mode end  ************/
 
