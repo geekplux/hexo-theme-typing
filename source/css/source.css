@@ -586,6 +586,17 @@ pre {
 
 
 
+/************  dark mode  ***********/
+$dark-bg: #3f3f3f;
+$dark-color: #c8c8c8;
+
+.dark {
+  background-color: $dark-bg;
+  color: $dark-color;
+}
+
+/************  dark mode end  ************/
+
 
 /* tablet */
 
