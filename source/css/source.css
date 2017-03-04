@@ -57,7 +57,6 @@ a {
   color: $black-light;
   /* font-weight: 200; */
   text-decoration: none;
-  border-bottom: solid 1px #eee;
   transition: color 250ms linear;
   cursor: pointer;
 }
@@ -80,7 +79,7 @@ em {
 }
 
 .archive-footer, .post-footer {
-  width: $content-width;
+  width: 100%;
   margin: 0 auto;
   padding: 50px 0;
   hr {
@@ -116,6 +115,8 @@ em {
 }
 
 .footer-content {
+  width: $content-width;
+  margin: 0 auto;
   text-align: left;
 }
 
@@ -132,6 +133,10 @@ em {
   color: $black-normal;
   text-align: center;
   position: relative;
+
+  a {
+    border-bottom: solid 1px #eee;
+  }
 
   .content {
     width: $content-width;
@@ -594,15 +599,17 @@ $dark-white-light: #fff;
 .dark {
   background-color: $dark-bg;
   color: $dark-color;
+  .container,
+  .footer {
+    background-color: $dark-bg;
+  }
 
   a {
     color: $dark-white;
-    border-bottom: solid 1px #ddd;
   }
   a:hover {
     @extend a-hover;
     color: $dark-white-light;
-    border-bottom: solid 1px $dark-white-light;
   }
 
   .home {
@@ -611,11 +618,19 @@ $dark-white-light: #fff;
     strong {
       color: $dark-white;
     }
+    a {
+      border-bottom: solid 1px #ddd;
+    }
+    a:hover {
+      border-bottom: solid 1px $dark-white-light;
+    }
   }
+
 }
 
 
 /************  dark mode end  ************/
+
 
 
 /* tablet */
