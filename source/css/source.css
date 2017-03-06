@@ -650,7 +650,26 @@ $dark-white-light: #fff;
         color: $dark-white-light;
       }
     }
+    .article-entry blockquote footer strong,
+    .article-meta a {
+      color: $dark-grey-bold;
+    }
   }
+
+  /* cover typo.css */
+  blockquote {
+    color: $dark-grey;
+  }
+  strong, b {
+    color: $dark-white;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: $dark-white;
+  }
+  .typo-em, .typo em, legend, caption {
+    color: $dark-grey-bold;
+  }
+  /* cover end */
 }
 
 
