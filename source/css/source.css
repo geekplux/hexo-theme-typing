@@ -593,6 +593,8 @@ pre {
 /************  dark mode  ***********/
 $dark-bg: #3f3f3f;
 $dark-color: #d8d8d8;
+$dark-grey: #aaa;
+$dark-grey-bold: #bbb;
 $dark-white: #ddd;
 $dark-white-light: #fff;
 
@@ -626,6 +628,29 @@ $dark-white-light: #fff;
     }
   }
 
+  .archive-container,
+  .category-container,
+  .tag-container,
+  .article {
+    .header {
+      .main-nav-link {
+        color: $dark-grey;
+      }
+      .main-nav-link:hover {
+        color: $dark-white-light;
+      }
+    }
+    .page-nav,
+    .article-nav {
+      color: $dark-grey;
+      a {
+        color: $dark-grey-bold;
+      }
+      a:hover {
+        color: $dark-white-light;
+      }
+    }
+  }
 }
 
 
