@@ -669,6 +669,12 @@ $dark-white-light: #fff;
   .typo-em, .typo em, legend, caption {
     color: $dark-grey-bold;
   }
+  .typo table td,
+  .typo-table td,
+  .typo table caption {
+    border: 1px solid #ddd;
+    color: $dark-grey;
+  }
   /* cover end */
 }
 
