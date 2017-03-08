@@ -447,6 +447,124 @@ em {
 
 
 
+/************  dark mode  ***********/
+$dark-bg: #3f3f3f;
+$dark-code-bg: #333;
+$dark-code-marked-bg: #444;
+$dark-color: #d8d8d8;
+$dark-grey: #aaa;
+$dark-grey-bold: #bbb;
+$dark-white: #ddd;
+$dark-white-light: #fff;
+
+.dark {
+  background-color: $dark-bg;
+  color: $dark-color;
+  .container,
+  .footer {
+    background-color: $dark-bg;
+  }
+
+  a {
+    color: $dark-white;
+  }
+  a:hover {
+    @extend a-hover;
+    color: $dark-white-light;
+  }
+
+  .home {
+    color: $dark-color;
+    h1,
+    strong {
+      color: $dark-white;
+    }
+    a {
+      border-bottom: solid 1px #ddd;
+    }
+    a:hover {
+      border-bottom: solid 1px $dark-white-light;
+    }
+  }
+
+  .archive-container,
+  .category-container,
+  .tag-container,
+  .article {
+    .header {
+      .main-nav-link {
+        color: $dark-grey;
+      }
+      .main-nav-link:hover {
+        color: $dark-white-light;
+      }
+    }
+    .page-nav,
+    .article-nav {
+      color: $dark-grey;
+      a {
+        color: $dark-grey-bold;
+      }
+      a:hover {
+        color: $dark-white-light;
+      }
+    }
+    .article-entry blockquote footer strong,
+    .article-meta a {
+      color: $dark-grey-bold;
+    }
+  }
+
+
+  /* cover typo.css */
+  blockquote {
+    color: $dark-grey;
+  }
+  strong, b {
+    color: $dark-white;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: $dark-white;
+  }
+  .typo-em, .typo em, legend, caption {
+    color: $dark-grey-bold;
+  }
+  .typo table td,
+  .typo-table td,
+  .typo table caption {
+    border: 1px solid #ddd;
+    color: $dark-grey;
+  }
+  /* cover end */
+
+
+  .article-entry {
+    pre {
+      color: $dark-color;
+      background-color: $dark-code-bg;
+    }
+    .highlight {
+      color: $dark-color;
+      background-color: $dark-code-bg;
+      table td,
+      td,
+      table caption {
+        border: 0;
+      }
+      .line.marked {
+        background: $dark-code-marked-bg;
+      }
+    }
+  }
+}
+
+
+/************  dark mode end  ************/
+
+
+
+
+
 /* code highlight */
 $code-background: #f3f5f6;
 $code-font-size: 14px;
@@ -588,99 +706,6 @@ pre {
     color: $highlight-purple;
   }
 }
-
-
-
-/************  dark mode  ***********/
-$dark-bg: #3f3f3f;
-$dark-color: #d8d8d8;
-$dark-grey: #aaa;
-$dark-grey-bold: #bbb;
-$dark-white: #ddd;
-$dark-white-light: #fff;
-
-.dark {
-  background-color: $dark-bg;
-  color: $dark-color;
-  .container,
-  .footer {
-    background-color: $dark-bg;
-  }
-
-  a {
-    color: $dark-white;
-  }
-  a:hover {
-    @extend a-hover;
-    color: $dark-white-light;
-  }
-
-  .home {
-    color: $dark-color;
-    h1,
-    strong {
-      color: $dark-white;
-    }
-    a {
-      border-bottom: solid 1px #ddd;
-    }
-    a:hover {
-      border-bottom: solid 1px $dark-white-light;
-    }
-  }
-
-  .archive-container,
-  .category-container,
-  .tag-container,
-  .article {
-    .header {
-      .main-nav-link {
-        color: $dark-grey;
-      }
-      .main-nav-link:hover {
-        color: $dark-white-light;
-      }
-    }
-    .page-nav,
-    .article-nav {
-      color: $dark-grey;
-      a {
-        color: $dark-grey-bold;
-      }
-      a:hover {
-        color: $dark-white-light;
-      }
-    }
-    .article-entry blockquote footer strong,
-    .article-meta a {
-      color: $dark-grey-bold;
-    }
-  }
-
-  /* cover typo.css */
-  blockquote {
-    color: $dark-grey;
-  }
-  strong, b {
-    color: $dark-white;
-  }
-  h1, h2, h3, h4, h5, h6 {
-    color: $dark-white;
-  }
-  .typo-em, .typo em, legend, caption {
-    color: $dark-grey-bold;
-  }
-  .typo table td,
-  .typo-table td,
-  .typo table caption {
-    border: 1px solid #ddd;
-    color: $dark-grey;
-  }
-  /* cover end */
-}
-
-
-/************  dark mode end  ************/
 
 
 
