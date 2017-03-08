@@ -219,6 +219,7 @@ em {
     }
 
     h1 {
+      width: calc(100% - 120px);
       font-size: 100%;
       margin: 0;
     }
