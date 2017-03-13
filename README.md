@@ -10,6 +10,10 @@ a pure and fresh Hexo theme.
 
 ![](preview/preview.png)
 
+##### dark mode
+
+![](preview/preview-dark-mode.png)
+
 other preview images in `preview` folder.
 
 ## Installation
@@ -37,6 +41,9 @@ git pull
 ## Configuration
 
 ``` yml
+# Dark Mode
+dark: false // whether to open dark mode
+
 # Header
 menu:
   Home: /

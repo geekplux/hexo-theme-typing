@@ -2,7 +2,7 @@
 language: en
 
 # Dark Mode
-dark: true
+dark: false
 
 # Header
 menu:
