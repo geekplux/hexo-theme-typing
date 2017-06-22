@@ -31,6 +31,8 @@ git clone https://github.com/geekplux/hexo-theme-typing themes/typing
 
 Modify `theme` setting in `_config.yml` to `typing`.
 
+Also if your website language is English make sure to explicitly specify it: `language: "en"`
+
 ### Update
 
 ``` bash
