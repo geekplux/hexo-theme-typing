@@ -204,8 +204,18 @@ em {
 
   .header {
     font-size: 18px;
+    .main-nav, .sub-nav {
+      display: inline-block;
+    }
+
     .main-nav-link {
       @extend nav-link-base;
+    }
+
+    .sub-nav {
+      a {
+        color: $grey-bold;
+      }
     }
   }
 
