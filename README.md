@@ -96,10 +96,22 @@ Anyone is welcome to contribute!
 mkdir typing_dev
 cd typing_dev
 git clone https://github.com/hexojs/hexo-theme-unit-test.git
-fork & clone https://github.com/geekplux/hexo-theme-typing.git
-cd hexo-theme-unit-test & npm install
-cd hexo-theme-typing & npm install & make all
 ```
+[Fork and clone](https://help.github.com/articles/fork-a-repo/) `https://github.com/geekplux/hexo-theme-typing.git`
+```shell
+cd hexo-theme-unit-test && npm install
+cd ../hexo-theme-typing && npm install
+```
+To test your changes to the theme, modify the `theme` setting in the
+`/hexo-theme-unit-test/_config.yml` file to `typing` and
+execute these commands in the `hexo-theme-typing` folder:
+```shell
+make all
+cd ../hexo-theme-unit-test
+hexo server
+```
+Now you can browse it at [127.0.0.1:4000](http://127.0.0.1:4000/)
+
 
 ### LICENSE
 
