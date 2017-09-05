@@ -51,6 +51,9 @@ menu:
   Home: /
   Archives: /archives
 
+# Your Feed Location
+# rss: /atom.xml
+
 # Content
 fancybox: true
 

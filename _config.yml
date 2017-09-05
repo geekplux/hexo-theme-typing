@@ -10,6 +10,8 @@ menu:
   Archives: /archives
   About: /about
 
+# Your Feed Location
+# rss: /atom.xml
 
 # Content
 fancybox: true
