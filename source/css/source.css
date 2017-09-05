@@ -96,7 +96,7 @@ em {
   width: 100%;
 }
 
-.copyright, .footer-content {
+.copyright, .footer-content, .footer-links {
   text-align: center;
   width: 100%;
   font-size: 80%;
@@ -107,7 +107,7 @@ em {
   }
 
   a {
-    color: $grey;
+    color: $grey-bold;
   }
   a:hover {
     color: $scooter;
@@ -120,6 +120,16 @@ em {
   text-align: left;
 }
 
+.footer-links {
+    a {
+	text-decoration: none;
+    }
+    font-size: 100%;
+    padding: 0;
+    li {
+	margin: 0 5px;
+    }
+}
 
 .home-body {
   display: flex;
@@ -169,14 +179,6 @@ em {
     }
   }
 
-  .links {
-    padding: 0;
-    text-align: center;
-    li {
-      display: inline-block;
-      margin: 0 5px;
-    }
-  }
 }
 
 
@@ -204,18 +206,8 @@ em {
 
   .header {
     font-size: 18px;
-    .main-nav, .sub-nav {
-      display: inline-block;
-    }
-
     .main-nav-link {
       @extend nav-link-base;
-    }
-
-    .sub-nav {
-      a {
-        color: $grey-bold;
-      }
     }
   }
 

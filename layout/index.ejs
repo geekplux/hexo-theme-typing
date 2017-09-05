@@ -7,12 +7,12 @@
       </div>
     </div>
     <hr/>
-    <ul class="links">
+  </div>
+</div>
+    <ul class="footer-links">
       <% for (var key in theme.links) { %>
         <li>
-          <a href="<%= theme.links[key] %>"><%= key %></a>
+          <a href="<%= theme.links[key] %>"><span class="fa fa-<%= key %>"></span></a>
         </li>
       <% } %>
     </ul>
-  </div>
-</div>

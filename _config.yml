@@ -9,7 +9,7 @@ menu:
   Home: /
   Archives: /archives
   About: /about
-rss: /atom.xml
+
 
 # Content
 fancybox: true
@@ -27,12 +27,19 @@ fb_app_id:
 # Profile
 nickname: NickName
 description: Lorem ipsum dolor sit amet, **consectetur adipiscing elit.** Fusce eget urna vitae velit *eleifend interdum at ac nisi. In nec ligula lacus. Cum sociis natoque* penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eu cursus erat, ut dapibus quam. Aliquam eleifend dolor vitae [libero pharetra](http://hexo.io) adipiscing. Etiam adipiscing dolor a quam tempor, eu convallis nulla varius. Aliquam sollicitudin risus a porta aliquam.
+
+
+# Links with fontawesome (http://fontawesome.io/) icons in the footer area.
+# NOTICE: Use the fontawesome icon names whitout the fa- prefix (http://fontawesome.io/cheatsheet/).
 links:
-  Blog: /archives
-  GitHub: https://github.com/
-  Instagram: http://instagram.com/
-  Facebook: http://facebook.com/
-  Twitter : http://twitter.com/
+  book: /archives/
+  globe: https://github.com/geekplux/hexo-theme-typing
+  twitter: https://twitter.com/
+  github-alt: https://github.com/
+  youtube-play: https://www.youtube.com/
+  stack-overflow: https://stackoverflow.com/
+  google-plus: https://plus.google.com/
+  rss: /atom.xml
 
 
 # Info
