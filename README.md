@@ -65,7 +65,7 @@ nickname: NickName
 description: Lorem ipsum dolor sit amet, **consectetur adipiscing elit.** Fusce eget urna vitae velit *eleifend interdum at ac* nisi.
 
 # Footer Links
-# NOTICE: Use the fontawesome icon names whitout the fa- prefix (http://fontawesome.io/cheatsheet/).
+# NOTICE: Use the fontawesome icon names without the fa- prefix (http://fontawesome.io/cheatsheet/).
 links:
   twitter: https://twitter.com/
   github-alt: https://github.com/
@@ -79,7 +79,7 @@ post_footer_content: ipsum dolor sit amet, **consectetur adipiscing elit.** Fusc
 - **menu** - Navigation menu
 - **nickname** - Your nickname
 - **description** - Description below the name
-- **links** - Links with fontawesome (http://fontawesome.io/) icons in the footer area.
+- **links** - Links with [fontawesome](http://fontawesome.io/) icons in the footer area.
 - **archive_footer_content**: - Content in your archives page footer(Markdown supported)
 - **post_footer_content**: - Content in your posts and pages footer(Markdown supported)
 - **fancybox** - Enable [Fancybox]
