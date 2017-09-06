@@ -7,7 +7,11 @@
   <ul class="footer-links">
     <% for (var key in theme.links) { %>
       <li>
-        <a href="<%= theme.links[key] %>"><span class="fa fa-<%= key %>"></span></a>
+        <% if (theme.icons){ %>
+          <a href="<%= theme.links[key] %>"><span class="fa fa-<%= key %>"></span></a>
+	<% } else { %>
+	  <a href="<%= theme.links[key] %>"><%= key %></a>
+	<% } %>
       </li>
     <% } %>
   </ul>
@@ -19,7 +23,11 @@
       <ul class="footer-links">
         <% for (var key in theme.links) { %>
           <li>
-            <a href="<%= theme.links[key] %>"><span class="fa fa-<%= key %>"></span></a>
+	    <% if (theme.icons){ %>
+              <a href="<%= theme.links[key] %>"><span class="fa fa-<%= key %>"></span></a>
+	    <% } else { %>
+	      <a href="<%= theme.links[key] %>"><%= key %></a>
+	    <% } %>
           </li>
         <% } %>
       </ul>
