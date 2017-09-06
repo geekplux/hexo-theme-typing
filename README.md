@@ -1,7 +1,10 @@
 # Typing
 
-a pure and fresh Hexo theme.
+A pure and fresh Hexo theme.
 
+* Minimal And Clean Design
+* Dark And Light Modes
+* Optional Fontawesome Icons
 
 ## Preview
 
@@ -10,11 +13,11 @@ a pure and fresh Hexo theme.
 
 ![](preview/preview.png)
 
-##### dark mode
+##### Dark mode
 
 ![](preview/preview-dark-mode.png)
 
-other preview images in `preview` folder.
+Other preview images in `preview` folder.
 
 ## Installation
 
@@ -52,7 +55,7 @@ menu:
   Archives: /archives
 
 # Your Feed Location
-# rss: /atom.xml
+#rss: /atom.xml
 
 # Content
 fancybox: true
@@ -67,8 +70,13 @@ google_plus:
 nickname: NickName
 description: Lorem ipsum dolor sit amet, **consectetur adipiscing elit.** Fusce eget urna vitae velit *eleifend interdum at ac* nisi.
 
-# Footer Links
-# NOTICE: Use the fontawesome icon names without the fa- prefix (http://fontawesome.io/cheatsheet/).
+# Load fontawesome icons? Also see the links option
+icons: true
+
+# Footer area links
+# NOTICE) If you set "icons: false" link names will be clear text
+# If "icons: true" link names will interpreted as fontawesome icon names
+# NOTICE) Use the fontawesome icon names (http://fontawesome.io/cheatsheet/) without the fa- prefix
 links:
   twitter: https://twitter.com/
   github-alt: https://github.com/
@@ -82,13 +90,14 @@ post_footer_content: ipsum dolor sit amet, **consectetur adipiscing elit.** Fusc
 - **menu** - Navigation menu
 - **nickname** - Your nickname
 - **description** - Description below the name
-- **links** - Links with [fontawesome](http://fontawesome.io/) icons in the footer area.
+- **icons** - Load [fontawesome](http://fontawesome.io/) icons?
+- **links** - Footer area links. Text links if `icons: false` and icons if `icons: true`
 - **archive_footer_content**: - Content in your archives page footer(Markdown supported)
 - **post_footer_content**: - Content in your posts and pages footer(Markdown supported)
 - **fancybox** - Enable [Fancybox]
 - **google_analytics** - Google Analytics ID
 - **favicon** - Favicon path
-- **twitter** - Twiiter ID
+- **twitter** - Twitter ID
 - **google_plus** - Google+ ID
 
 
@@ -97,8 +106,7 @@ post_footer_content: ipsum dolor sit amet, **consectetur adipiscing elit.** Fusc
 Anyone is welcome to contribute!
 
 ```shell
-mkdir typing_dev
-cd typing_dev
+mkdir typing_dev && cd typing_dev
 git clone https://github.com/hexojs/hexo-theme-unit-test.git
 ```
 [Fork and clone](https://help.github.com/articles/fork-a-repo/) `https://github.com/geekplux/hexo-theme-typing.git`
