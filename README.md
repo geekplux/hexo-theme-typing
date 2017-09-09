@@ -85,6 +85,14 @@ links:
 # Info
 archive_footer_content: Lorem ipsum dolor sit amet, **consectetur adipiscing elit.** Fusce eget urna vitae velit *eleifend interdum at ac* nisi.
 post_footer_content: ipsum dolor sit amet, **consectetur adipiscing elit.** Fusce eget urna vitae velit *eleifend interdum at ac* nisi.
+
+# Gitment
+gitment:
+  owner:
+  repo:
+  client:
+    id:
+    secret:
 ```
 
 - **menu** - Navigation menu
@@ -99,6 +107,7 @@ post_footer_content: ipsum dolor sit amet, **consectetur adipiscing elit.** Fusc
 - **favicon** - Favicon path
 - **twitter** - Twitter ID
 - **google_plus** - Google+ ID
+- **gitment** - Gitment Options
 
 
 ## Development

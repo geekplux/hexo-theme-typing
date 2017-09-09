@@ -14,6 +14,22 @@
   </script>
 <% } %>
 
+<% if (theme.gitment.owner && theme.gitment.repo && theme.gitment.client.id && theme.gitment.client.secret && !is_home() && !is_archive()) { %>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+  var gitment = new Gitment({
+    owner: '<%= theme.gitment.owner %>',
+    repo: '<%= theme.gitment.repo %>',
+    oauth: {
+      client_id: '<%= theme.gitment.client.id %>',
+      client_secret: '<%= theme.gitment.client.secret %>'
+    }
+  })
+  gitment.render('gitment_container')
+</script>
+<% } %>
+
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 
 <% if (theme.fancybox){ %>

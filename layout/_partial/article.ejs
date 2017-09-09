@@ -54,3 +54,9 @@
     </div>
   </section>
 <% } %>
+
+<% if (!index && post.comments && theme.gitment.owner && theme.gitment.repo && theme.gitment.client.id && theme.gitment.client.secret){ %>
+<section id="comments" class="comments">
+  <div id="gitment_container"></div>
+</section>
+<% } %>
