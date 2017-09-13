@@ -18,6 +18,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "gitment": "^0.0.3",
     "normalize.css": "^4.2.0",
     "typo.css": "^2.1.2"
   },

@@ -1,6 +1,8 @@
 # Typing
 
-A pure and fresh Hexo theme.
+> A pure and fresh Hexo theme.
+
+<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/RizFLaSm9aGhe9yCXFhKnPx1/geekplux/hexo-theme-typing'>  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/RizFLaSm9aGhe9yCXFhKnPx1/geekplux/hexo-theme-typing.svg' /></a>
 
 * Minimal And Clean Design
 * Dark And Light Modes
@@ -149,5 +151,3 @@ Authored and maintained by [@geekplux](https://github.com/geekplux) with help fr
 > Blog [geekplux.com](http://geekplux.com) &nbsp;&middot;&nbsp;
 > GitHub [@geekplux](https://github.com/geekplux) &nbsp;&middot;&nbsp;
 > Twitter [@geekplux](https://twitter.com/geekplux)
-
-<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/RizFLaSm9aGhe9yCXFhKnPx1/geekplux/hexo-theme-typing'>  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/RizFLaSm9aGhe9yCXFhKnPx1/geekplux/hexo-theme-typing.svg' /></a>
