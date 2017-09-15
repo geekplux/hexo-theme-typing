@@ -3,34 +3,26 @@
     <div id="copyright" class="copyright">
       &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>  <%= __('powered_by') %> <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme &copy; <a href="https://github.com/geekplux" target="_blank">GeekPlux</a>
 <% } else if (is_archive()) { %>
-<footer id="footer" class="archive-footer footer">
-  <ul class="footer-links">
-    <% for (var key in theme.links) { %>
-      <li>
-        <% if (theme.icons){ %>
-          <a href="<%= theme.links[key] %>"><span class="fa fa-<%= key %>"></span></a>
-	<% } else { %>
-	  <a href="<%= theme.links[key] %>"><%= key %></a>
-	<% } %>
-      </li>
-    <% } %>
-  </ul>
+  <footer id="footer" class="archive-footer footer">
+    <% if (theme.icons){ %>
+      <ul class="footer-links">
+        <% for (var key in theme.links) { %>
+          <li><a href="<%= theme.links[key] %>"><span class="fa fa-<%= key %>"></span></a></li>
+        <% } %>
+      </ul>
+	  <% } %>
   <hr/>
   <div id="footerContent" class="footer-content">
     <%- markdown(theme.archive_footer_content) %>
 <% } else {%>
     <footer id="footer" class="post-footer footer">
-      <ul class="footer-links">
-        <% for (var key in theme.links) { %>
-          <li>
-	    <% if (theme.icons){ %>
-              <a href="<%= theme.links[key] %>"><span class="fa fa-<%= key %>"></span></a>
-	    <% } else { %>
-	      <a href="<%= theme.links[key] %>"><%= key %></a>
+      <% if (theme.icons){ %>
+        <ul class="footer-links">
+          <% for (var key in theme.links) { %>
+            <li><a href="<%= theme.links[key] %>"><span class="fa fa-<%= key %>"></span></a></li>
+          <% } %>
+        </ul>
 	    <% } %>
-          </li>
-        <% } %>
-      </ul>
       <hr/>
       <div id="footerContent" class="footer-content">
         <%- markdown(theme.post_footer_content) %>

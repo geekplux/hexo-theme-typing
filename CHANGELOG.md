@@ -1,5 +1,11 @@
 # Changelog
 
+## [Unreleased]
+
+## [1.2.3] - date
+
+- fix extra links in archive page
+- switch the order of comments section
 
 ## [Released]
 
