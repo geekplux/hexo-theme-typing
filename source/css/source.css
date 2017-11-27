@@ -10,6 +10,7 @@ $grey-bold: #777;
 $grey-light: #cacdd0;
 $scooter: #22C5E5;
 $content-width: 60%;
+$content-max-width: 700px;
 
 
 @define-extend a-hover {
@@ -116,19 +117,20 @@ em {
 
 .footer-content {
   width: $content-width;
+  max-width: $content-max-width;
   margin: 0 auto;
   text-align: left;
 }
 
 .footer-links {
-    a {
-	text-decoration: none;
-    }
-    font-size: 100%;
-    padding: 0;
-    li {
-	margin: 0 5px;
-    }
+  a {
+    text-decoration: none;
+  }
+  font-size: 100%;
+  padding: 0;
+  li {
+    margin: 0 5px;
+  }
 }
 
 .home-body {
@@ -192,6 +194,7 @@ em {
   text-align: left;
   font-size: 16px;
   padding-top: 50px;
+  max-width: $content-max-width;
 
   article {
     margin-bottom: 15px;
@@ -265,6 +268,8 @@ em {
 
 .article {
   width: $content-width;
+  max-width: $content-max-width;
+
   margin: 0 auto;
   /* font-size: 16px; */
 
@@ -442,6 +447,7 @@ em {
 
 .comments {
   width: $content-width;
+  max-width: $content-max-width;
   margin: 50px auto 0 auto;
 }
 
