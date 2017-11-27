@@ -2,12 +2,21 @@
 
 ## [Unreleased]
 
-## [1.2.3] - date
+
+
+## [Released]
+
+## [1.3.3] - 2017-11-27
+
+- add max-width for content
+- fix responsive width
+- change fonts
+
+## [1.2.3] - 2017-09-15
 
 - fix extra links in archive page
 - switch the order of comments section
 
-## [Released]
 
 ## [1.2.2] - 2017-09-10
 
