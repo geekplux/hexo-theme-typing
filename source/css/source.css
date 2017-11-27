@@ -11,6 +11,7 @@ $grey-light: #cacdd0;
 $scooter: #22C5E5;
 $content-width: 60%;
 $content-max-width: 700px;
+$mobile-content-width: 80%;
 
 
 @define-extend a-hover {
@@ -115,9 +116,12 @@ em {
   }
 }
 
-.footer-content {
+.archive-footer, .post-footer {
   width: $content-width;
   max-width: $content-max-width;
+}
+
+.footer-content {
   margin: 0 auto;
   text-align: left;
 }
@@ -723,12 +727,37 @@ pre {
   body {
     font-size: 18px;
   }
+
+  .archive-footer, .post-footer {
+    width: $mobile-content-width;
+  }
+
+  .home {
+    .content {
+      width: $mobile-content-width;
+    }
+
+  }
+  .archive-container {
+    width: $mobile-content-width;
+  }
+  .article {
+    width: $mobile-content-width;
+  }
+  .article-title {
+    font-size: 2rem;
+  }
+  .comments {
+    width: $mobile-content-width;
+  }
 }
 
 
 /* mobile */
 
 @media (max-width: 468px) {
+  $mobile-content-width: 80%;
+
   body {
     font-size: 16px;
   }
@@ -754,8 +783,6 @@ pre {
 }
 
 @media (max-width: 320px) {
-  $mobile-content-width: 80%;
-
   body {
     font-size: 14px;
   }
@@ -773,25 +800,5 @@ pre {
   .footer,
   .footer-content {
     font-size: 100%;
-  }
-
-  .archive-footer, .post-footer {
-    width: $mobile-content-width;
-  }
-
-  .home {
-    .content {
-      width: $mobile-content-width;
-    }
-
-  }
-  .archive-container {
-    width: $mobile-content-width;
-  }
-  .article {
-    width: $mobile-content-width;
-  }
-  .comments {
-    width: $mobile-content-width;
   }
 }
