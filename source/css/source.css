@@ -40,6 +40,7 @@ body {
   height: 100%;
   position: relative;
   box-sizing: border-box;
+  color: $black-light;
 }
 
 body, h1, h2, h3, h4, h5, h6 {
@@ -73,6 +74,17 @@ a:hover {
 em {
   font-style: italic;
   font-weight: lighter;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+blockquote {
+  color: #666;
+  border-left: 2px solid #666;
+  padding-left: 1em;
+  margin: 1em 3em 1em -1em;
 }
 
 .footer {
@@ -603,7 +615,7 @@ $highlight-purple: #8959a8;
 
 @define-extend code-block {
   padding: 20px;
-  background: $highlight-background;
+  background: $code-background;
   color: $highlight-foreground;
   font-size: $code-font-size;
   overflow: auto;
@@ -650,9 +662,6 @@ $highlight-purple: #8959a8;
     }
     .gutter pre {
       @extend line-numbers;
-      text-align: right;
-      padding-right: 20px;
-      width: 0;
     }
     .line {
       height: 25px;
