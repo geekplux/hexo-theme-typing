@@ -2,8 +2,6 @@
 
 > A pure and fresh Hexo theme.
 
-<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/RizFLaSm9aGhe9yCXFhKnPx1/geekplux/hexo-theme-typing'>  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/RizFLaSm9aGhe9yCXFhKnPx1/geekplux/hexo-theme-typing.svg' /></a>
-
 * Minimal And Clean Design
 * Dark And Light Modes
 * Optional Fontawesome Icons
