@@ -59,3 +59,13 @@ gitment:
   client:
     id:
     secret:
+
+
+# Donate
+donate:
+  github: https://github.com/geekplux
+  paypal: https://www.paypal.me/geekplux
+  bitcoin: 1AVngxh56oLvAzXsEFnzccUohZdHswjC7j
+  BTCQR: http://7b1evr.com1.z0.glb.clouddn.com/donate/bitcoin.png
+  AliPayQR: http://7b1evr.com1.z0.glb.clouddn.com/donate/alipayQR.jpg
+  WeChatQR: http://7b1evr.com1.z0.glb.clouddn.com/donate/wechatQR.jpg

@@ -19,6 +19,23 @@
       <% } else { %>
         <%- post.content %>
       <% } %>
+      <div id="donate" class="donate">
+        <a id="github" href="<%= theme.donate.github %>" target="_blank" class="pos-f tr3" title="Github"></a>
+	      <div id="DonateText" class="tr3">Donate</div>
+	      <ul id="donateBox" class="list pos-f tr3">
+		      <li id="PayPal"><a href="<%= theme.donate.paypal %>" target="_blank">PayPal</a></li>
+		      <li id="BTC" data-footnote="Copy addres and show QRCod"><button id="BTCBn"  data-clipboard-target="#btc-key" alt="Copy to clipboard">Bitcoin</button></li>
+		      <li id="AliPay">AliPay</li>
+		      <li id="WeChat">WeChat</li>
+	      </ul>
+	      <div id="QRBox" class="pos-f left-100">
+		      <div id="BTCQR" class="MainBox" style="background-image: url(<%= theme.donate.BTCQR %>)"></div>
+		      <div id="AliPayQR" class="MainBox" style="background-image: url(<%= theme.donate.AliPayQR %>)"></div>
+		      <div id="WeChatQR" class="MainBox" style="background-image: url(<%= theme.donate.WeChatQR %>)"></div>
+	      </div>
+	      <!-- Bitcoin 账号 -->
+	      <input id="btc-key" type="text" value="<%= theme.donate.bitcoin %>" readonly="readonly">
+      </div>
     </div>
     <footer class="article-footer">
       <ul class="article-meta">
