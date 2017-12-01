@@ -93,6 +93,15 @@ gitment:
   client:
     id:
     secret:
+
+# Donate
+donate:
+  github:
+  paypal:
+  bitcoin:
+  BTCQR:
+  AliPayQR:
+  WeChatQR:
 ```
 
 - **menu** - Navigation menu
@@ -107,7 +116,8 @@ gitment:
 - **favicon** - Favicon path
 - **twitter** - Twitter ID
 - **google_plus** - Google+ ID
-- **gitment** - Gitment Options
+- **gitment** - [Gitment](https://github.com/imsun/gitment) Options
+- **donate** - Donate Options
 
 
 ## ChangeLog
