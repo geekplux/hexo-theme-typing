@@ -6,6 +6,11 @@
 
 ## [Released]
 
+## [1.4.0] - 2017-11-27
+
+- add donate section
+
+
 ## [1.3.3] - 2017-11-27
 
 - add max-width for content
