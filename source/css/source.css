@@ -362,6 +362,14 @@ blockquote {
       }
     }
 
+    td,
+    th,
+    table caption,
+    table td,
+    table th {
+      word-break: initial;
+    }
+
     .pullquote {
       width: 45%;
       border: 0;
