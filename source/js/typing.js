@@ -59,7 +59,22 @@
 			  });
 			  $('#DonateText,#donateBox,#github').removeClass('blur');
 		  },600);
+    });
 
-	  });
+    $('#menu').click(function (event) {
+      var nav = $('#main-nav');
+      console.log(nav.css('opacity'))
+      if (+nav.css('opacity')) nav.css({ opacity: 0 });
+      else nav.css({ opacity: 1 });
+    });
+
+    $(window).resize(function () {
+      var viewportWidth = $(window).width();
+      if (viewportWidth > 468) {
+        $('#main-nav').css({ opacity: 1 });
+      } else {
+        $('#main-nav').css({ opacity: 0 });
+      }
+    });
   });
 })(jQuery)
