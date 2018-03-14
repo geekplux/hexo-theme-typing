@@ -31,7 +31,7 @@ nickname: NickName
 description: Lorem ipsum dolor sit amet, **consectetur adipiscing elit.** Fusce eget urna vitae velit *eleifend interdum at ac nisi. In nec ligula lacus. Cum sociis natoque* penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eu cursus erat, ut dapibus quam. Aliquam eleifend dolor vitae [libero pharetra](http://hexo.io) adipiscing. Etiam adipiscing dolor a quam tempor, eu convallis nulla varius. Aliquam sollicitudin risus a porta aliquam.
 
 # Load fontawesome icons? Also see the links option
-icons: true
+icons: false
 
 # Footer area links
 # NOTICE) If you set "icons: false" link names will be clear text
@@ -47,6 +47,8 @@ links:
   google-plus: https://plus.google.com/
   rss: /atom.xml
 
+# nav position (top, left. top is default)
+nav: left
 
 # Info
 archive_footer_content: Lorem ipsum dolor sit amet, **consectetur adipiscing elit.** Fusce eget urna vitae velit *eleifend interdum at ac nisi. In nec ligula lacus. Cum sociis natoque* penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eu cursus erat, ut dapibus quam. Archive

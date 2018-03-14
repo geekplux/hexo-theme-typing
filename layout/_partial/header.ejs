@@ -1,5 +1,9 @@
 <header id="header" class="header">
-  <nav id="main-nav" class="main-nav">
+    <% if (theme.nav === 'left') { %>
+        <nav id="main-nav" class="main-nav nav-left">
+    <% } else { %>
+        <nav id="main-nav" class="main-nav">
+    <% } %>
     <% for (var i in theme.menu){ %>
       <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
     <% } %>

@@ -31,6 +31,7 @@ $mobile-content-width: 80%;
   color: $grey-bold;
   padding-bottom: 5px;
   display: inline-block;
+  border: 0;
 }
 
 
@@ -202,6 +203,22 @@ blockquote {
 
 }
 
+.main-nav-link {
+  @extend nav-link-base;
+}
+
+.nav-left {
+  position: absolute;
+  left: -100px;
+  text-align: right;
+  .main-nav-link {
+    display: block;
+    padding-bottom: 10px;
+  }
+}
+.header-hr-left {
+  display: none;
+}
 
 .archive-container,
 .category-container,
@@ -228,9 +245,6 @@ blockquote {
 
   .header {
     font-size: 18px;
-    .main-nav-link {
-      @extend nav-link-base;
-    }
   }
 
   .archive-article-header {
@@ -295,10 +309,23 @@ blockquote {
   .header {
     font-size: 18px;
     padding-top: 50px;
+  }
+
+  .main-nav-link:hover {
+    border: 0;
+  }
+
+  .nav-left {
+    position: relative;
+    left: initial;
+    text-align: initial;
     .main-nav-link {
-      @extend nav-link-base;
-      border: 0;
+      display: inline-block;
+      padding-bottom: 5px;
     }
+  }
+  .header-hr-left {
+    display: block;
   }
 
   hr {
@@ -769,6 +796,19 @@ pre {
   }
   .comments {
     width: $mobile-content-width;
+  }
+
+  .nav-left {
+    position: relative;
+    left: initial;
+    text-align: initial;
+    .main-nav-link {
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+  }
+  .header-hr-left {
+    display: block;
   }
 }
 

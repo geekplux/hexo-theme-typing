@@ -1,5 +1,9 @@
 <div class="archive-container">
   <%- partial('_partial/header') %>
-  <hr/>
+  <% if (theme.nav === 'left'){ %>
+    <hr class="header-hr header-hr-left"/>
+  <% } else { %>
+    <hr class="header-hr"/>
+  <% } %>
   <%- partial('_partial/archive', {pagination: config.archive, index: true}) %>
 </div>
