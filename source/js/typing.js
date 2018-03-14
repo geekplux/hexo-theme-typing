@@ -63,17 +63,15 @@
 
     $('#menu').click(function (event) {
       var nav = $('#main-nav');
-      console.log(nav.css('opacity'))
-      if (+nav.css('opacity')) nav.css({ opacity: 0 });
-      else nav.css({ opacity: 1 });
+      nav.toggle('fast');
     });
 
     $(window).resize(function () {
       var viewportWidth = $(window).width();
       if (viewportWidth > 468) {
-        $('#main-nav').css({ opacity: 1 });
+        $('#main-nav').show('fast');
       } else {
-        $('#main-nav').css({ opacity: 0 });
+        $('#main-nav').hide('fast');
       }
     });
   });
