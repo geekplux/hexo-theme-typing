@@ -6,7 +6,11 @@
 
 ## [Released]
 
-## [1.5.0] - 2017-11-27
+## [1.5.1] - 2018-03-14
+
+- fix mobile menu style
+
+## [1.5.0] - 2018-03-14
 
 - add mobile menu
 - add nav left style in desktop view
