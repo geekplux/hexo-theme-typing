@@ -6,10 +6,14 @@
 
 ## [Released]
 
+## [1.5.0] - 2017-11-27
+
+- add mobile menu
+- add nav left style in desktop view
+
 ## [1.4.0] - 2017-11-27
 
 - add donate section
-
 
 ## [1.3.3] - 2017-11-27
 

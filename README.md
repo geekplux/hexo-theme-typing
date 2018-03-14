@@ -82,6 +82,9 @@ links:
   github-alt: https://github.com/
 # ...
 
+# nav position (top, left. top is default)
+nav: top
+
 # Info
 archive_footer_content: Lorem ipsum dolor sit amet, **consectetur adipiscing elit.** Fusce eget urna vitae velit *eleifend interdum at ac* nisi.
 post_footer_content: ipsum dolor sit amet, **consectetur adipiscing elit.** Fusce eget urna vitae velit *eleifend interdum at ac* nisi.
