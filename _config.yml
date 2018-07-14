@@ -62,7 +62,9 @@ gitment:
     id:
     secret:
 
-# Utterances, make sure the app is installed on the repo, see https://utteranc.es/ for more
+# Utterances
+# NOTICE) make sure the app is installed on the repo before using this commit system
+# see https://utteranc.es/ for more
 utterances:
   enable: false
   repo: # your repo in this format: 'username/reponame', note that there is no '.git' suffix
