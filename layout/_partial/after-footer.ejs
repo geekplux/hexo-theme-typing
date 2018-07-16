@@ -30,6 +30,21 @@
 </script>
 <% } %>
 
+<% if (theme.utterances.enable && theme.utterances.repo){ %>
+  <script>
+    (function() {
+      var utterances = document.createElement('script');
+      var utterances_container = document.getElementById('utterances_container');
+      utterances.src='https://utteranc.es/client.js'
+      utterances.setAttribute('repo', '<%= theme.utterances.repo %>');
+      utterances.setAttribute('issue-term', 'title');
+      utterances.setAttribute('crossorigin', 'anonymous');
+      utterances.setAttribute('async', true);
+      utterances_container.appendChild(utterances);
+    })();
+   </script>
+<% } %>
+
 <% if (theme.valine.enable && theme.valine.appId && theme.valine.appKey){ %>
   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
   <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
