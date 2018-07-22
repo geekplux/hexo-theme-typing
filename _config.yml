@@ -84,6 +84,7 @@ valine:
 
 # Donate
 donate:
+  enable: false
   github: https://github.com/geekplux
   paypal: https://www.paypal.me/geekplux
   bitcoin: 1AVngxh56oLvAzXsEFnzccUohZdHswjC7j

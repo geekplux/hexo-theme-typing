@@ -40,7 +40,9 @@
       utterances.setAttribute('issue-term', 'title');
       utterances.setAttribute('crossorigin', 'anonymous');
       utterances.setAttribute('async', true);
-      utterances_container.appendChild(utterances);
+      if (utterances_container){
+        utterances_container.appendChild(utterances);
+      }
     })();
    </script>
 <% } %>
