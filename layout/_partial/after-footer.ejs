@@ -72,16 +72,16 @@
   </script>
 <% } %>
 
-<%- js('https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js') %>
-<%- js('https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.1/clipboard.min.js') %>
+<%- js('https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js') %>
+<%- js('https://cdn.jsdelivr.net/npm/clipboard@2.0.1/dist/clipboard.min.js') %>
 
 <% if (theme.fancybox){ %>
-  <%- css('https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.css') %>
-  <%- js('https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.2/jquery.fancybox.min.js') %>
+  <%- css('https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css') %>
+  <%- js('https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js') %>
 <% } %>
 
 <%- js('js/typing') %>
-<!--[if lt IE 9]><%- js('https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js') %><![endif]-->
+<!--[if lt IE 9]><%- js('https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js') %><![endif]-->
 <%- partial('baidu_tongji') %>
 <%- partial('google-analytics') %>
 <%- partial('gauges-analytics') %>
