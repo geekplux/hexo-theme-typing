@@ -43,7 +43,7 @@
 		  var thisID	=	$(this).attr('id');
 		  if (thisID === 'BTC') {
 			  showQR(BTCQR);
-			  new Clipboard('#BTCBn');
+			  new ClipboardJS('#BTCBn');
 		  } else if (thisID === 'AliPay') {
 			  showQR(AliPayQR);
 		  } else if (thisID === 'WeChat') {
