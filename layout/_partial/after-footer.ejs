@@ -15,8 +15,8 @@
 <% } %>
 
 <% if (theme.gitment.owner && theme.gitment.repo && theme.gitment.client.id && theme.gitment.client.secret && !is_home() && !is_archive()) { %>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<%- css('https://cdn.jsdelivr.net/npm/gitment@0.0.3/style/default.min.css') %>
+<%- js('https://cdn.jsdelivr.net/npm/gitment@0.0.3/dist/gitment.browser.min.js') %>
 <script>
   var gitment = new Gitment({
     owner: '<%= theme.gitment.owner %>',
