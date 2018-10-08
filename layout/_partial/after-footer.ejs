@@ -15,8 +15,8 @@
 <% } %>
 
 <% if (theme.gitment.owner && theme.gitment.repo && theme.gitment.client.id && theme.gitment.client.secret && !is_home() && !is_archive()) { %>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<%- css('https://cdn.jsdelivr.net/npm/gitment/style/default.min.css') %>
+<%- js('https://cdn.jsdelivr.net/npm/gitment/dist/gitment.browser.min.js') %>
 <script>
   var gitment = new Gitment({
     owner: '<%= theme.gitment.owner %>',
@@ -48,8 +48,8 @@
 <% } %>
 
 <% if (theme.valine.enable && theme.valine.appId && theme.valine.appKey){ %>
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<%- js('https://cdn.jsdelivr.net/npm/leancloud-storage@3/dist/av-min.js') %>
+<%- js('https://cdn.jsdelivr.net/npm/valine@1/dist/Valine.min.js') %>
   <script>
       var GUEST_INFO = ['nick','mail','link'];
       var guest_info = '<%= theme.valine.guest_info %>'.split(',').filter(function(item){
@@ -72,16 +72,16 @@
   </script>
 <% } %>
 
-<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js"></script>
+<%- js('https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js') %>
+<%- js('https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js') %>
 
 <% if (theme.fancybox){ %>
-  <%- css('fancybox/jquery.fancybox') %>
-  <%- js('fancybox/jquery.fancybox.pack') %>
+  <%- css('https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.css') %>
+  <%- js('https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/jquery.fancybox.min.js') %>
 <% } %>
 
 <%- js('js/typing') %>
-<!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+<!--[if lt IE 9]><%- js('https://cdn.jsdelivr.net/npm/html5shiv@3/dist/html5shiv.min.js') %><![endif]-->
 <%- partial('baidu_tongji') %>
 <%- partial('google-analytics') %>
 <%- partial('gauges-analytics') %>

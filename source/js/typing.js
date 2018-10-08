@@ -10,7 +10,7 @@
         $(this).after('<span class="caption">' + alt + '</span>')
       }
 
-      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>')
+      $(this).wrap('<a href="' + this.src + '" data-fancybox=\"gallery\" data-caption="' + alt + '"></a>')
     })
 
     $(this).find('.fancybox').each(function () {
@@ -43,7 +43,7 @@
 		  var thisID	=	$(this).attr('id');
 		  if (thisID === 'BTC') {
 			  showQR(BTCQR);
-			  new Clipboard('#BTCBn');
+			  new ClipboardJS('#BTCBn');
 		  } else if (thisID === 'AliPay') {
 			  showQR(AliPayQR);
 		  } else if (thisID === 'WeChat') {
