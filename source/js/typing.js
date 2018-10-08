@@ -10,7 +10,7 @@
         $(this).after('<span class="caption">' + alt + '</span>')
       }
 
-      $(this).wrap('<a href="' + this.src + '" data-fancybox data-caption="' + alt + '"></a>')
+      $(this).wrap('<a href="' + this.src + '" data-fancybox=\"gallery\" data-caption="' + alt + '"></a>')
     })
 
     $(this).find('.fancybox').each(function () {
