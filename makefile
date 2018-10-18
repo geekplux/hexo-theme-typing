@@ -1,6 +1,6 @@
 .PHONY: css
 css:
-	./node_modules/.bin/postcss --use postcss-import --use precss --use autoprefixer --use cssnano source/css/source.css --output source/css/typing.css
+	./node_modules/.bin/postcss source/css/source.css --use postcss-import --use precss --use autoprefixer --use cssnano --output source/css/typing.css
 
 .PHONY: copy
 copy:
