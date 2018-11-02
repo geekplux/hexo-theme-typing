@@ -699,6 +699,9 @@ $highlight-purple: #8959a8;
         float: right;
       }
     }
+    .gutter {
+      padding-right: 10px;
+    }
     .gutter pre {
       @extend line-numbers;
     }
