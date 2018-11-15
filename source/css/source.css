@@ -8,25 +8,25 @@ $black-light: #222;
 $grey: #aeb4b9;
 $grey-bold: #777;
 $grey-light: #cacdd0;
-$scooter: #22C5E5;
+$scooter: #22c5e5;
 $content-width: 60%;
 $content-max-width: 700px;
 $mobile-content-width: 80%;
 
 
-@define-extend a-hover {
+%a-hover {
   color: $scooter;
-  border-bottom: solid 1px RGBA(34, 197, 229, .2);
+  border-bottom: solid 1px rgba(34, 197, 229, .2);
   transition: color 100ms linear
 }
 
-@define-extend hr-base {
+%hr-base {
   height: 1px;
   border: 0;
   background-image: -webkit-linear-gradient(0deg, transparent, #d5d5d5, transparent);
 }
 
-@define-extend nav-link-base {
+%nav-link-base {
   margin-right: 10px;
   color: $grey-bold;
   padding-bottom: 5px;
@@ -70,7 +70,7 @@ a {
 }
 a:hover {
   text-decoration: none;
-  @extend a-hover;
+  @extend %a-hover;
 }
 
 em {
@@ -102,7 +102,7 @@ blockquote {
   margin: 0 auto;
   padding: 50px 0;
   hr {
-    @extend hr-base;
+    @extend %hr-base;
   }
   color: $grey-light;
   a, b, strong {
@@ -184,7 +184,7 @@ blockquote {
   }
 
   hr {
-    @extend hr-base;
+    @extend %hr-base;
     width: 80%;
     max-width: 300px;
     margin: 20px auto;
@@ -205,7 +205,7 @@ blockquote {
 }
 
 .main-nav-link {
-  @extend nav-link-base;
+  @extend %nav-link-base;
 }
 .nav-left {
   position: absolute;
@@ -270,7 +270,7 @@ blockquote {
   hr {
     width: 60%;
     margin: 20px 0 40px 0;
-    @extend hr-base;
+    @extend %hr-base;
     background-image: -webkit-linear-gradient(0deg, #d5d5d5, #d5d5d5, transparent);
   }
 
@@ -335,7 +335,7 @@ blockquote {
   hr {
     width: 60%;
     margin: 20px 0 40px 0;
-    @extend hr-base;
+    @extend %hr-base;
     background-image: -webkit-linear-gradient(0deg, #d5d5d5, #d5d5d5, transparent);
   }
 
@@ -382,7 +382,7 @@ blockquote {
             border-bottom: 1px solid #eee;
             transition: color 250ms linear;
             &:hover {
-              @extend a-hover;
+              @extend %a-hover;
             }
           }
         }
@@ -446,7 +446,7 @@ blockquote {
     vertical-align: top;
     border: 0;
     &:hover {
-      @extend a-hover;
+      @extend %a-hover;
       border-bottom: 0;
     }
     strong {
@@ -464,7 +464,7 @@ blockquote {
     margin-top: 50px;
     hr {
       margin-top: 50px;
-      @extend hr-base;
+      @extend %hr-base;
     }
   }
 
@@ -535,7 +535,7 @@ $dark-white-light: #fff;
     color: $dark-white;
   }
   a:hover {
-    @extend a-hover;
+    @extend %a-hover;
     color: $dark-white-light;
   }
 
@@ -652,7 +652,7 @@ $highlight-purple: #8959a8;
 
 
 
-@define-extend code-block {
+%code-block {
   padding: 20px;
   background: $code-background;
   color: $highlight-foreground;
@@ -661,7 +661,7 @@ $highlight-purple: #8959a8;
   line-height: $code-line-height;
 }
 
-@define-extend line-numbers {
+%line-numbers {
   color: $grey;
   font-size: $code-font-size;
 }
@@ -671,7 +671,7 @@ $highlight-purple: #8959a8;
     margin: 0;
   }
   pre {
-    @extend code-block;
+    @extend %code-block;
     code {
       background: none;
       text-shadow: none;
@@ -679,7 +679,7 @@ $highlight-purple: #8959a8;
     }
   }
   .highlight {
-    @extend code-block;
+    @extend %code-block;
     pre {
       border: 0;
       margin: 0;
@@ -703,7 +703,7 @@ $highlight-purple: #8959a8;
       padding-right: 10px;
     }
     .gutter pre {
-      @extend line-numbers;
+      @extend %line-numbers;
     }
     .line {
       height: 25px;
