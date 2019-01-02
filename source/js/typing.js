@@ -60,19 +60,5 @@
 			  $('#DonateText,#donateBox,#github').removeClass('blur');
 		  },600);
     });
-
-    $('#menu').click(function (event) {
-      var nav = $('#main-nav');
-      nav.toggle('fast');
-    });
-
-    $(window).resize(function () {
-      var viewportWidth = $(window).width();
-      if (viewportWidth > 468) {
-        $('#main-nav').show('fast');
-      } else {
-        $('#main-nav').hide('fast');
-      }
-    });
   });
 })(jQuery)
