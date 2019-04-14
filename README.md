@@ -70,13 +70,13 @@ google_plus:
 nickname: NickName
 description: Lorem ipsum dolor sit amet, **consectetur adipiscing elit.** Fusce eget urna vitae velit *eleifend interdum at ac* nisi.
 
-# Load fontawesome icons? Also see the links option
+# Load forkawesome icons? Also see the links option
 icons: true
 
 # Footer area links
 # NOTICE) If you set "icons: false" link names will be clear text
-# If "icons: true" link names will interpreted as fontawesome icon names
-# NOTICE) Use the fontawesome icon names (http://fontawesome.io/cheatsheet/) without the fa- prefix
+# If "icons: true" link names will interpreted as forkawesome icon names
+# NOTICE) Use the forkawesome icon names (https://forkaweso.me/Fork-Awesome/icons/) without the fa- prefix
 links:
   twitter: https://twitter.com/
   github-alt: https://github.com/
