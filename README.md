@@ -60,6 +60,9 @@ menu:
 # Content
 fancybox: true
 
+# Display a "Read More" link under each post's excerpt in /archives page
+#excerpt_link: 'Read More'
+
 # Miscellaneous
 google_analytics:
 favicon: /favicon.png
