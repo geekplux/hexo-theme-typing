@@ -1,5 +1,5 @@
 <div class="category-container">
-  <%- partial('_partial/header') %>
+  <%- partial('_partial/header', {}, { cache: true }) %>
   <hr/>
   <%- partial('_partial/archive', {pagination: config.tag, index: true}) %>
 </div>
