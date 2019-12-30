@@ -22,7 +22,7 @@
   <%- open_graph({twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
   <% if (config.feed) { %>
     <% if (config.feed.type.length && config.feed.path.length) { %>
-      <% if (typeof config.feed.type === 'string' )) { %>
+      <% if (typeof config.feed.type === 'string' ) { %>
         <link rel="alternate" type="application/<%- config.feed.type.replace(/2$/, '') %>+xml" title="<%= config.title %>" href="<%- url_for(config.feed.path) %>">
       <% } else { %>
         <% for (const i in config.feed.type) { %>
