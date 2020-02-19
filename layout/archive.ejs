@@ -1,5 +1,5 @@
 <div class="archive-container">
-  <%- partial('_partial/header') %>
+  <%- partial('_partial/header', {}, { cache: true }) %>
   <% if (theme.nav === 'left'){ %>
     <hr class="header-hr header-hr-left"/>
   <% } else { %>
