@@ -548,8 +548,10 @@ blockquote {
   }
 
   /* display mobile nav */
-  .mobile-nav{
-    display:block
+  .mobile-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   /* display links when menu button is clicked */
