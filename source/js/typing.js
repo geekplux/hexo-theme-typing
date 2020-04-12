@@ -59,6 +59,21 @@
 			  });
 			  $('#DonateText,#donateBox,#github').removeClass('blur');
 		  },600);
-    });
+		});
+
+		// Hide mobile menu when click outside of the menu
+		$(document).click(function(event) {
+			const mainNavDisplay = $('.main-nav').css('display');
+			const mobileNav = $('.mobile-nav-link');
+			const menuBtn = $('#menu-button');
+			const mobileToggle = $('#mobile-menu-toggle');
+			const isClickedOutside = !$(event.target).is(mobileNav);
+
+			if (mainNavDisplay !== 'none' || $(event.target).is(menuBtn) || $(event.target).is(mobileToggle) || mobileToggle.prop('checked') === false) return;
+
+			if (isClickedOutside) {
+				mobileToggle.prop('checked', false);
+			}
+		});
   });
 })(jQuery)
