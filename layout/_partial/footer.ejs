@@ -7,7 +7,7 @@
     <% if (theme.icons){ %>
       <ul class="footer-links">
         <% for (var key in theme.links) { %>
-          <li><a href="<%= theme.links[key] %>"><span class="fa fa-<%= key %>"></span></a></li>
+          <li><a href="<%- url_for(theme.links[key]) %>"><span class="fa fa-<%= key %>"></span></a></li>
         <% } %>
       </ul>
 	  <% } %>
@@ -19,7 +19,7 @@
       <% if (theme.icons){ %>
         <ul class="footer-links">
           <% for (var key in theme.links) { %>
-            <li><a href="<%= theme.links[key] %>"><span class="fa fa-<%= key %>"></span></a></li>
+            <li><a href="<%- url_for(theme.links[key]) %>"><span class="fa fa-<%= key %>"></span></a></li>
           <% } %>
         </ul>
 	    <% } %>
