@@ -26,7 +26,7 @@
     <%- feed_tag(theme.rss) %>
   <% } %>
   <% if (theme.favicon){ %>
-    <link rel="icon" href="<%- theme.favicon %>">
+    <%- favicon_tag(theme.favicon) %>
   <% } %>
   <%- css('css/typing') %>
   <%- css('css/donate') %>
